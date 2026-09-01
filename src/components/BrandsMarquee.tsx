@@ -159,7 +159,7 @@ export default function BrandsMarquee() {
           gap: "1rem",
           marginBottom: "3rem"
         }}>
-          {/* Left/Right Fade Fringes */}
+         
           <div style={{
             position: "absolute",
             left: 0,
