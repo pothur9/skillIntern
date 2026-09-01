@@ -1,0 +1,351 @@
+/* ===== CodeEmy — Exact Production CSS + Containers & Spacing ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Orbitron:wght@700;800;900&display=swap');
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: #0c091a;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+ul, ol { list-style: none; }
+
+/* Global Container & Section Whitespace Padding Rules */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.section {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* Custom Orbit Animations */
+@keyframes spin-orbit {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes unspin-orbit {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.animate-spin-orbit-slow {
+  animation: spin-orbit 25s linear infinite;
+}
+
+.animate-unspin-orbit-slow {
+  animation: unspin-orbit 25s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes brand-marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes brand-marquee-reverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes marquee-up {
+  0%   { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes marquee-down {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.8; transform: scale(1.08); }
+}
+
+.animate-brand-marquee {
+  display: flex;
+  min-width: 200%;
+  animation: brand-marquee 28s linear infinite;
+}
+
+.animate-brand-marquee-reverse {
+  display: flex;
+  min-width: 200%;
+  animation: brand-marquee-reverse 28s linear infinite;
+}
+
+.animate-marquee-up {
+  animation: marquee-up 35s linear infinite;
+}
+
+.animate-marquee-down {
+  animation: marquee-down 35s linear infinite;
+}
+
+.animate-marquee-up-slow {
+  animation: marquee-up 45s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.btn-shimmer {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5, #7c3aed, #4f46e5);
+  background-size: 200% 100%;
+  animation: shimmer 4s linear infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+/* CodeEmy Rotating Border Button */
+.button_box {
+  width: auto;
+  min-width: 140px;
+  height: 44px;
+  border-radius: 9999px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  padding: 0 1.75rem;
+  transition: transform 0.2s ease;
+}
+
+.button_box:hover {
+  transform: scale(1.02);
+}
+
+.rotating_border_ring {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent 0%, transparent 60%, #c084fc 80%, #818cf8 100%);
+  animation: rotate 2.5s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.buttonClass {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% - 3px);
+  height: calc(100% - 3px);
+  border-radius: 9999px;
+  border: none;
+  background-color: #120e2af2;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+}
+
+.button_box:hover .buttonClass {
+  background-color: #120e2ad9;
+  color: #c084fc;
+}
+
+.glass-card {
+  background: rgba(18, 14, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.15);
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #c084fc;
+  background: rgba(192, 132, 252, 0.1);
+  border: 1px solid rgba(192, 132, 252, 0.2);
+}
+
+.section-title {
+  font-family: var(--font-orbitron);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #c084fc, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ====================================================
+   GLOBAL RESPONSIVE UTILITIES — Mobile First
+   ==================================================== */
+
+/* Hide/show helpers */
+@media (max-width: 768px) {
+  .hide-mobile { display: none !important; }
+}
+@media (min-width: 769px) {
+  .hide-desktop { display: none !important; }
+}
+
+/* Responsive button_box: shrink on tiny screens */
+@media (max-width: 480px) {
+  .button_box {
+    min-width: 90px;
+    height: 38px;
+    padding: 0 1rem;
+  }
+  .buttonClass {
+    font-size: 12px;
+    padding: 0 0.8rem;
+  }
+}
+
+/* Section title responsive clamp tightening */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
+  }
+  .section-subtitle {
+    font-size: 0.92rem;
+  }
+  .section {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+  }
+}
+
+/* Orbit visual — hide on small screens to prevent overflow */
+@media (max-width: 768px) {
+  .orbit-hide-mobile { display: none !important; }
+}
+
+/* Prevent media elements from causing horizontal overflow */
+img, svg, video, iframe { max-width: 100%; }
+
+/* Scrollable horizontal tabs utility */
+.tabs-scroll, .no-scrollbar {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tabs-scroll::-webkit-scrollbar, .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.tabs-scroll > * { flex-shrink: 0; }
+
+.bg-size-200 {
+  background-size: 200% auto;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Full-width button on mobile */
+@media (max-width: 640px) {
+  .btn-full-mobile {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
