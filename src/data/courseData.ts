@@ -146,7 +146,7 @@ export const COURSES: Course[] = [
   },
   {
     id: "GENAI-005",
-    image: "/Design.png",
+    image: "/genai_course.png",
     title: "Generative AI (Gen AI)",
     description: "Master Large Language Models (LLMs), RAG systems, Prompt Engineering, Diffusion models, and AI agent frameworks. Build enterprise-grade Gen AI applications using LangChain, OpenAI APIs, Vector DBs, and Llama Index.",
     price: "₹60,000",

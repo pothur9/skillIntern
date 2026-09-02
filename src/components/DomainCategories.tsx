@@ -56,7 +56,7 @@ const DOMAINS_DATA = [
     title: "Generative AI (Gen AI)",
     subtitle: "LLMs, RAG, Prompt Engineering & Agents",
     desc: "Build enterprise Gen AI apps with LangChain, OpenAI APIs, Vector DBs & LLMs.",
-    image: "/Design.png",
+    image: "/genai_course.png",
     icon: <FaBrain />,
     price: "₹60,000",
     originalPrice: "₹90,000",
