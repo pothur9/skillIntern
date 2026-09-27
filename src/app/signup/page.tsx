@@ -21,23 +21,20 @@ export default function SignupPage() {
         textAlign: "center",
         border: "1px solid rgba(168, 85, 247, 0.3)"
       }}>
-        <Link href="/" style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", textDecoration: "none", marginBottom: "1.5rem" }}>
+        <Link href="/" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", marginBottom: "1.5rem" }}>
           <div style={{
-            width: "42px",
-            height: "42px",
+            height: "54px",
             borderRadius: "12px",
-            background: "rgba(124,58,237,0.2)",
-            border: "1px solid rgba(124,58,237,0.3)",
+            overflow: "hidden",
+            background: "#ffffff",
+            padding: "3px 12px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            overflow: "hidden"
+            boxShadow: "0 0 18px rgba(124,58,237,0.45)"
           }}>
-            <img src="/logos/inspirelogo.png" alt="Pioneer Technologies" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
+            <img src="/logos/logo.png" alt="Pioneer Technologies" style={{ height: "48px", width: "auto", objectFit: "contain", display: "block" }} />
           </div>
-          <span style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.4rem", fontWeight: 800, color: "#fff" }}>
-            Inspire <span className="gradient-text">AI</span>
-          </span>
         </Link>
 
         <h2 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.3rem", color: "#fff", marginBottom: "0.4rem" }}>

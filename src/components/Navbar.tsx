@@ -83,35 +83,22 @@ export default function Navbar() {
             transition: "all 0.4s ease"
           }}>
             {/* Logo */}
-            <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.65rem", textDecoration: "none" }}>
+            <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
               <div
                 style={{
-                  width: "36px",
-                  height: "36px",
+                  height: "46px",
                   borderRadius: "10px",
                   overflow: "hidden",
+                  background: "#ffffff",
+                  padding: "2px 8px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  background: "rgba(124,58,237,0.2)",
-                  border: "1px solid rgba(124,58,237,0.3)"
+                  boxShadow: "0 0 14px rgba(124,58,237,0.4)"
                 }}
               >
-                <img src="/logos/inspirelogo.png" alt="Pioneer Technologies" style={{ width: "26px", height: "26px", objectFit: "contain" }} />
+                <img src="/logos/logo.png" alt="Pioneer Technologies" style={{ height: "42px", width: "auto", objectFit: "contain", display: "block" }} />
               </div>
-              <span
-                style={{
-                  fontFamily: "var(--font-orbitron)",
-                  fontSize: "1.25rem",
-                  fontWeight: 800,
-                  letterSpacing: "-0.02em",
-                  background: "linear-gradient(90deg, #c084fc, #818cf8)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent"
-                }}
-              >
-                Pioneer Technologies
-              </span>
             </Link>
 
             {/* Desktop Navigation Links */}
