@@ -33,7 +33,7 @@ export default function SignupPage() {
             justifyContent: "center",
             overflow: "hidden"
           }}>
-            <img src="/logos/inspirelogo.png" alt="Inspire AI" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
+            <img src="/logos/inspirelogo.png" alt="Pioneer Technologies" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
           </div>
           <span style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.4rem", fontWeight: 800, color: "#fff" }}>
             Inspire <span className="gradient-text">AI</span>
@@ -44,7 +44,7 @@ export default function SignupPage() {
           Create Student Account
         </h2>
         <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "1.8rem" }}>
-          Start your career journey with Inspire AI programs
+          Start your career journey with Pioneer Technologies programs
         </p>
 
         <form onSubmit={(e) => e.preventDefault()} style={{ display: "flex", flexDirection: "column", gap: "1.1rem", textAlign: "left" }}>

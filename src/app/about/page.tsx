@@ -12,7 +12,7 @@ export default function AboutPage() {
       <section style={{ paddingTop: "clamp(6rem, 12vw, 9rem)", paddingBottom: "5rem" }}>
         <div className="container" style={{ textAlign: "center" }}>
           <div className="section-badge" style={{ margin: "0 auto 1.5rem" }}>
-            <span>About Inspire AI</span>
+            <span>About Pioneer Technologies</span>
           </div>
 
           <h1 className="section-title" style={{ fontSize: "clamp(2.2rem, 5vw, 3.5rem)" }}>
@@ -20,7 +20,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="section-subtitle" style={{ margin: "0 auto 4rem", fontSize: "1.1rem" }}>
-            Inspire AI is India’s premier career-focused EdTech platform. We empower students and working professionals with job-ready skills in Full Stack Web Development, Data Science, Data Analytics, Artificial Intelligence, Generative AI (Gen AI), and Digital Marketing.
+            Pioneer Technologies is India’s premier career-focused EdTech platform. We empower students and working professionals with job-ready skills in Full Stack Web Development, Data Science, Data Analytics, Artificial Intelligence, Generative AI (Gen AI), and Digital Marketing.
           </p>
 
           <div style={{

@@ -5,11 +5,11 @@ export interface FaqItem {
 
 export const FAQS: FaqItem[] = [
   {
-    question: "What is Inspire AI?",
-    answer: "Inspire AI is India’s leading career-focused EdTech platform offering online courses, internships, certification programs, and placement training. Our goal is to bridge the gap between college education and real-world industry skills."
+    question: "What is Pioneer Technologies?",
+    answer: "Pioneer Technologies is India’s leading career-focused EdTech platform offering online courses, internships, certification programs, and placement training. Our goal is to bridge the gap between college education and real-world industry skills."
   },
   {
-    question: "What kind of courses does Inspire AI offer?",
+    question: "What kind of courses does Pioneer Technologies offer?",
     answer: "We offer 6 job-oriented flagship courses: Full Stack Web Development, Data Science, Data Analytics, Artificial Intelligence, Generative AI (Gen AI), and Digital Marketing. All programs are designed to meet industry standards and boost employability."
   },
   {
@@ -25,7 +25,7 @@ export const FAQS: FaqItem[] = [
     answer: "Absolutely! We provide dedicated career support including resume building, mock interviews, LinkedIn profile optimization, and direct hiring referrals through our 50+ hiring partner companies."
   },
   {
-    question: "Who can enroll in Inspire AI courses?",
+    question: "Who can enroll in Pioneer Technologies courses?",
     answer: "Anyone with a passion to learn! Our courses cater to students, fresh graduates, working professionals looking for a career transition, and beginners with zero prior coding experience."
   },
   {

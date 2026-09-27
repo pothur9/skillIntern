@@ -307,7 +307,7 @@ export default function Hero() {
               >
                 <img
                   src="/logos/inspirelogo.png"
-                  alt="Inspire AI Logo"
+                  alt="Pioneer Technologies Logo"
                   style={{
                     width: "100%",
                     height: "100%",

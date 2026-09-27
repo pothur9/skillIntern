@@ -13,7 +13,7 @@ export default function RefundPage() {
           <div className="glass-card" style={{ padding: "2.5rem", borderRadius: "1.5rem", color: "#e2e8f0", lineHeight: 1.8 }}>
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>1. 7-Day Satisfaction Guarantee</h3>
             <p style={{ marginBottom: "1.5rem" }}>
-              Inspire AI offers a 7-day money-back guarantee from the course start date. If you feel the program does not meet your expectations, you may request a 100% refund.
+              Pioneer Technologies offers a 7-day money-back guarantee from the course start date. If you feel the program does not meet your expectations, you may request a 100% refund.
             </p>
 
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>2. Refund Processing</h3>

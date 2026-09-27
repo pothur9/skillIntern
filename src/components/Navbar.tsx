@@ -97,7 +97,7 @@ export default function Navbar() {
                   border: "1px solid rgba(124,58,237,0.3)"
                 }}
               >
-                <img src="/logos/inspirelogo.png" alt="Inspire AI" style={{ width: "26px", height: "26px", objectFit: "contain" }} />
+                <img src="/logos/inspirelogo.png" alt="Pioneer Technologies" style={{ width: "26px", height: "26px", objectFit: "contain" }} />
               </div>
               <span
                 style={{
@@ -110,7 +110,7 @@ export default function Navbar() {
                   WebkitTextFillColor: "transparent"
                 }}
               >
-                Inspire AI
+                Pioneer Technologies
               </span>
             </Link>
 

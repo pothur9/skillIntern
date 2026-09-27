@@ -56,7 +56,7 @@ const REVIEWS_COL3 = [
     role: "Cloud Specialist",
     company: "Amazon AWS",
     rating: 5,
-    content: "AWS cloud architecture and serverless projects were easy to follow. Highly recommend Inspire AI."
+    content: "AWS cloud architecture and serverless projects were easy to follow. Highly recommend Pioneer Technologies."
   },
   {
     name: "Siddharth Rao",

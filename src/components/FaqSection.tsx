@@ -26,7 +26,7 @@ export default function FaqSection() {
             Got <span className="gradient-text">Questions?</span> We Have Answers.
           </h2>
           <p className="section-subtitle" style={{ margin: "0 auto" }}>
-            Everything you need to know about Inspire AI courses, certifications, and career support.
+            Everything you need to know about Pioneer Technologies courses, certifications, and career support.
           </p>
         </div>
 

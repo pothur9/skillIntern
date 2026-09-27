@@ -10,11 +10,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.inspireai.in"),
-  title: "Inspire AI — India's Leading Career Platform",
+  title: "Pioneer Technologies — India's Leading Career Platform",
   description:
-    "Master in-demand skills in Full Stack Web Development, AI, Cyber Security, CAD Engineering, UI/UX Design, and Digital Marketing with Inspire AI.",
+    "Master in-demand skills in Full Stack Web Development, AI, Cyber Security, CAD Engineering, UI/UX Design, and Digital Marketing with Pioneer Technologies.",
   keywords: [
-    "Inspire AI",
+    "Pioneer Technologies",
     "online courses",
     "full stack development",
     "cyber security",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
     "internships",
     "certifications"
   ],
-  authors: [{ name: "Inspire AI" }],
-  creator: "Inspire AI",
-  publisher: "Inspire AI",
+  authors: [{ name: "Pioneer Technologies" }],
+  creator: "Pioneer Technologies",
+  publisher: "Pioneer Technologies",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.inspireai.in",
-    siteName: "Inspire AI",
-    title: "Inspire AI — India's Leading Career Platform",
+    siteName: "Pioneer Technologies",
+    title: "Pioneer Technologies — India's Leading Career Platform",
     description:
       "Master in-demand skills in tech, CAD, design, and business with industry-ready certification programs.",
   },

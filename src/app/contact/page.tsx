@@ -24,7 +24,7 @@ export default function ContactPage() {
               <span>Get In Touch</span>
             </div>
             <h1 className="section-title">
-              Contact <span className="gradient-text">Inspire AI Team</span>
+              Contact <span className="gradient-text">Pioneer Technologies Team</span>
             </h1>
             <p className="section-subtitle" style={{ margin: "0 auto" }}>
               Have questions about course admissions, fee structures, or corporate training? We are here to help.

@@ -37,11 +37,11 @@ export default function VerificationPage() {
           </div>
 
           <h1 className="section-title">
-            Verify <span className="gradient-text">Inspire AI Certificate</span>
+            Verify <span className="gradient-text">Pioneer Technologies Certificate</span>
           </h1>
 
           <p className="section-subtitle" style={{ margin: "0 auto 3rem" }}>
-            Enter the unique Certificate ID printed on your Inspire AI credential to verify authenticity.
+            Enter the unique Certificate ID printed on your Pioneer Technologies credential to verify authenticity.
           </p>
 
           {/* Search Box */}

@@ -33,7 +33,7 @@ export default function LoginPage() {
             justifyContent: "center",
             overflow: "hidden"
           }}>
-            <img src="/logos/inspirelogo.png" alt="Inspire AI" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
+            <img src="/logos/inspirelogo.png" alt="Pioneer Technologies" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
           </div>
           <span style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.4rem", fontWeight: 800, color: "#fff" }}>
             Inspire <span className="gradient-text">AI</span>

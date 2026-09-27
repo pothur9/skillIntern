@@ -44,10 +44,10 @@ export default function Footer() {
                 justifyContent: "center",
                 overflow: "hidden"
               }}>
-                <img src="/logos/inspirelogo.png" alt="Inspire AI" style={{ width: "28px", height: "28px", objectFit: "contain" }} />
+                <img src="/logos/inspirelogo.png" alt="Pioneer Technologies" style={{ width: "28px", height: "28px", objectFit: "contain" }} />
               </div>
               <span style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.3rem", fontWeight: 800, color: "#fff" }}>
-                Inspire <span className="gradient-text">AI</span>
+                Pioneer <span className="gradient-text">Technologies</span>
               </span>
             </Link>
 
@@ -118,7 +118,7 @@ export default function Footer() {
           fontSize: "0.82rem",
           color: "var(--text-subtle)"
         }}>
-          © {new Date().getFullYear()} Inspire AI. All rights reserved. Building India&apos;s Next Generation of Skilled Tech Professionals.
+          © {new Date().getFullYear()} Pioneer Technologies. All rights reserved. Building India&apos;s Next Generation of Skilled Tech Professionals.
         </div>
       </div>
     </footer>

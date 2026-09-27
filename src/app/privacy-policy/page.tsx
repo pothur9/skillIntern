@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
           <div className="glass-card" style={{ padding: "2.5rem", borderRadius: "1.5rem", color: "#e2e8f0", lineHeight: 1.8 }}>
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>1. Information We Collect</h3>
             <p style={{ marginBottom: "1.5rem" }}>
-              Inspire AI collects personal information such as your name, email address, phone number, and educational background when you register for a course or request a consultation.
+              Pioneer Technologies collects personal information such as your name, email address, phone number, and educational background when you register for a course or request a consultation.
             </p>
 
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>2. How We Use Information</h3>

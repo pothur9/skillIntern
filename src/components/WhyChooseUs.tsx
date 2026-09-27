@@ -141,7 +141,7 @@ export default function WhyChooseUs() {
               fontWeight: 700,
               marginBottom: "1.8rem"
             }}>
-              <FaCheckCircle /> The Inspire AI Solution
+              <FaCheckCircle /> The Pioneer Technologies Solution
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>

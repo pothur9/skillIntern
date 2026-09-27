@@ -13,7 +13,7 @@ export default function TermsPage() {
           <div className="glass-card" style={{ padding: "2.5rem", borderRadius: "1.5rem", color: "#e2e8f0", lineHeight: 1.8 }}>
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>1. Course Access &amp; License</h3>
             <p style={{ marginBottom: "1.5rem" }}>
-              Upon enrolling in an Inspire AI program, you receive a personal, non-transferable license to access course materials, live sessions, and syllabus assignments.
+              Upon enrolling in an Pioneer Technologies program, you receive a personal, non-transferable license to access course materials, live sessions, and syllabus assignments.
             </p>
 
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>2. Code of Conduct</h3>
@@ -23,7 +23,7 @@ export default function TermsPage() {
 
             <h3 style={{ fontFamily: "var(--font-orbitron)", color: "#fff", marginBottom: "0.8rem" }}>3. Intellectual Property</h3>
             <p>
-              All video recordings, syllabus PDFs, assignments, and logos are the property of Inspire AI. Unlawful distribution is strictly prohibited.
+              All video recordings, syllabus PDFs, assignments, and logos are the property of Pioneer Technologies. Unlawful distribution is strictly prohibited.
             </p>
           </div>
         </div>
