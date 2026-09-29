@@ -7,7 +7,7 @@ const DASHBOARD_FEATURES = [
     icon: <FaDesktop />,
     title: "Personal Dashboard",
     desc: "Track progress, manage courses, and view your learning analytics — all in one place.",
-    color: "#a78bfa"
+    color: "#2563eb"
   },
   {
     icon: <FaVideo />,
@@ -32,10 +32,10 @@ const DASHBOARD_FEATURES = [
 export default function DashboardPreview() {
   return (
     <section className="section" style={{
-      background: "linear-gradient(135deg, #130a2e 0%, #1f1046 100%)",
+      background: "linear-gradient(135deg, #f0f7ff 0%, #eff6ff 100%)",
       position: "relative",
-      borderTop: "1px solid rgba(168, 85, 247, 0.2)",
-      borderBottom: "1px solid rgba(168, 85, 247, 0.2)"
+      borderTop: "1px solid rgba(37, 99, 235, 0.15)",
+      borderBottom: "1px solid rgba(37, 99, 235, 0.15)"
     }}>
       <div className="container">
         <div style={{ textAlign: "center", marginBottom: "4rem" }}>
@@ -45,7 +45,7 @@ export default function DashboardPreview() {
           <h2 className="section-title">
             One Platform. <span className="gradient-text">Complete Guidance.</span>
           </h2>
-          <p className="section-subtitle" style={{ margin: "0 auto" }}>
+          <p className="section-subtitle" style={{ margin: "0 auto", color: "#475569" }}>
             Your learning happens on a dedicated platform built for focus and results. No distractions — just a clean, powerful dashboard.
           </p>
         </div>
@@ -88,10 +88,10 @@ export default function DashboardPreview() {
                   {item.icon}
                 </div>
                 <div>
-                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#fff", marginBottom: "0.3rem" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0a1628", marginBottom: "0.3rem" }}>
                     {item.title}
                   </h3>
-                  <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: 1.6 }}>
+                  <p style={{ fontSize: "0.88rem", color: "#6b7280", lineHeight: 1.6 }}>
                     {item.desc}
                   </p>
                 </div>
@@ -103,8 +103,8 @@ export default function DashboardPreview() {
           <div className="glass-card" style={{
             padding: "1.8rem",
             borderRadius: "1.8rem",
-            border: "1px solid rgba(168, 85, 247, 0.3)",
-            boxShadow: "0 20px 50px rgba(0,0,0,0.6)"
+            border: "1px solid rgba(37, 99, 235, 0.2)",
+            boxShadow: "0 20px 50px rgba(37,99,235,0.1)"
           }}>
             <div style={{
               display: "flex",
@@ -112,40 +112,40 @@ export default function DashboardPreview() {
               justifyContent: "space-between",
               paddingBottom: "1rem",
               marginBottom: "1.5rem",
-              borderBottom: "1px solid rgba(255,255,255,0.08)"
+              borderBottom: "1px solid rgba(37,99,235,0.1)"
             }}>
               <div style={{ display: "flex", gap: "0.4rem" }}>
                 <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "#ef4444" }} />
                 <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "#eab308" }} />
                 <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "#22c55e" }} />
               </div>
-              <span style={{ fontSize: "0.75rem", color: "var(--text-subtle)" }}>lms.inspireai.in</span>
+              <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>lms.inspireai.in</span>
             </div>
 
-            <div style={{ background: "rgba(18,14,42,0.9)", padding: "1.2rem", borderRadius: "1rem", marginBottom: "1rem" }}>
-              <div style={{ fontSize: "0.75rem", color: "#c084fc", fontWeight: 700, marginBottom: "0.3rem" }}>ACTIVE COURSE</div>
-              <div style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.1rem", fontWeight: 700, color: "#fff", marginBottom: "0.8rem" }}>
+            <div style={{ background: "rgba(37,99,235,0.05)", padding: "1.2rem", borderRadius: "1rem", marginBottom: "1rem" }}>
+              <div style={{ fontSize: "0.75rem", color: "#2563eb", fontWeight: 700, marginBottom: "0.3rem" }}>ACTIVE COURSE</div>
+              <div style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.1rem", fontWeight: 700, color: "#0a1628", marginBottom: "0.8rem" }}>
                 Full Stack Web Development
               </div>
-              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "0.4rem" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "#6b7280", marginBottom: "0.4rem" }}>
                 <span>Overall Completion</span>
                 <span style={{ color: "#34d399", fontWeight: 700 }}>78%</span>
               </div>
-              <div style={{ height: "6px", background: "rgba(255,255,255,0.1)", borderRadius: "9999px" }}>
-                <div style={{ height: "100%", width: "78%", background: "linear-gradient(to right, #a855f7, #34d399)", borderRadius: "9999px" }} />
+              <div style={{ height: "6px", background: "rgba(37,99,235,0.1)", borderRadius: "9999px" }}>
+                <div style={{ height: "100%", width: "78%", background: "linear-gradient(to right, #2563eb, #34d399)", borderRadius: "9999px" }} />
               </div>
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
-              <div style={{ background: "rgba(255,255,255,0.03)", padding: "1rem", borderRadius: "0.8rem", textAlign: "center" }}>
+              <div style={{ background: "rgba(37,99,235,0.06)", padding: "1rem", borderRadius: "0.8rem", textAlign: "center" }}>
                 <FaFire style={{ color: "#f97316", fontSize: "1.5rem", marginBottom: "0.3rem" }} />
-                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#fff" }}>14 Days</div>
-                <div style={{ fontSize: "0.75rem", color: "var(--text-subtle)" }}>Current Streak</div>
+                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#0a1628" }}>14 Days</div>
+                <div style={{ fontSize: "0.75rem", color: "#6b7280" }}>Current Streak</div>
               </div>
-              <div style={{ background: "rgba(255,255,255,0.03)", padding: "1rem", borderRadius: "0.8rem", textAlign: "center" }}>
+              <div style={{ background: "rgba(37,99,235,0.06)", padding: "1rem", borderRadius: "0.8rem", textAlign: "center" }}>
                 <FaCheckCircle style={{ color: "#34d399", fontSize: "1.5rem", marginBottom: "0.3rem" }} />
-                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#fff" }}>12/12</div>
-                <div style={{ fontSize: "0.75rem", color: "var(--text-subtle)" }}>Projects Verified</div>
+                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#0a1628" }}>12/12</div>
+                <div style={{ fontSize: "0.75rem", color: "#6b7280" }}>Projects Verified</div>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ export default function SignupPage() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      background: "radial-gradient(ellipse at 50% 30%, rgba(147, 51, 234, 0.15), #0c091a 70%)",
+      background: "radial-gradient(ellipse at 50% 30%, rgba(124, 58, 237, 0.08), #f5f3ff 70%)",
       padding: "2rem 1.5rem"
     }}>
       <div className="glass-card" style={{

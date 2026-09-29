@@ -63,24 +63,45 @@ export default function Navbar() {
           style={{
             width: "calc(100% - 2rem)",
             maxWidth: scrolled ? "960px" : "1150px",
-            borderRadius: "1rem",
-            background: "rgba(255, 255, 255, 0.08)",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
-            border: "1px solid rgba(255,255,255,0.15)",
-            boxShadow: "0 4px 24px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.1)",
+            borderRadius: "1.25rem",
+            background: "linear-gradient(135deg, rgba(255,255,255,0.72) 0%, rgba(240,235,255,0.58) 50%, rgba(255,255,255,0.68) 100%)",
+            backdropFilter: "blur(32px) saturate(180%)",
+            WebkitBackdropFilter: "blur(32px) saturate(180%)",
+            border: "1px solid rgba(255,255,255,0.55)",
+            boxShadow: [
+              "0 8px 32px rgba(124,58,237,0.18)",
+              "0 2px 8px rgba(0,0,0,0.08)",
+              "inset 0 1.5px 0 rgba(255,255,255,0.95)",
+              "inset 0 -1px 0 rgba(124,58,237,0.08)"
+            ].join(", "),
             pointerEvents: "auto",
-            transition: "all 0.4s ease"
+            transition: "all 0.4s ease",
+            position: "relative",
+            overflow: "hidden"
           }}
           role="navigation"
           aria-label="Main navigation"
         >
+          {/* Glossy sheen overlay */}
+          <div style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "50%",
+            background: "linear-gradient(180deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0) 100%)",
+            borderRadius: "1.25rem 1.25rem 0 0",
+            pointerEvents: "none",
+            zIndex: 0
+          }} />
           <div style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             padding: scrolled ? "0.5rem 1.2rem" : "0.75rem 1.5rem",
-            transition: "all 0.4s ease"
+            transition: "all 0.4s ease",
+            position: "relative",
+            zIndex: 1
           }}>
             {/* Logo */}
             <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
@@ -117,15 +138,15 @@ export default function Navbar() {
                         padding: "0.45rem 0.9rem",
                         borderRadius: "0.75rem",
                         fontSize: "0.88rem",
-                        fontWeight: 500,
-                        color: "#94a3b8",
+                        fontWeight: 600,
+                        color: "#3b1f8c",
                         background: "transparent",
                         border: "1px solid transparent",
                         cursor: "pointer",
                         transition: "all 0.25s ease"
                       }}
                     >
-                      <span style={{ fontSize: "0.85rem", opacity: 0.7 }}>{item.icon}</span>
+                      <span style={{ fontSize: "0.85rem", opacity: 0.8, color: "#7c3aed" }}>{item.icon}</span>
                       {item.label}
                     </button>
                   );
@@ -141,15 +162,16 @@ export default function Navbar() {
                       padding: "0.45rem 0.9rem",
                       borderRadius: "0.75rem",
                       fontSize: "0.88rem",
-                      fontWeight: 500,
+                      fontWeight: 600,
                       textDecoration: "none",
                       transition: "all 0.25s ease",
-                      color: isActive ? "#ffffff" : "#94a3b8",
-                      background: isActive ? "linear-gradient(135deg, rgba(124,58,237,0.4), rgba(79,70,229,0.3))" : "transparent",
-                      border: isActive ? "1px solid rgba(124,58,237,0.35)" : "1px solid transparent"
+                      color: isActive ? "#ffffff" : "#1e1b4b",
+                      background: isActive ? "linear-gradient(135deg, #7c3aed, #4f46e5)" : "transparent",
+                      border: isActive ? "1px solid rgba(124,58,237,0.5)" : "1px solid transparent",
+                      textShadow: isActive ? "0 1px 4px rgba(0,0,0,0.2)" : "none"
                     }}
                   >
-                    <span style={{ fontSize: "0.85rem", opacity: isActive ? 1 : 0.7 }}>{item.icon}</span>
+                    <span style={{ fontSize: "0.85rem", opacity: 1, color: isActive ? "rgba(255,255,255,0.85)" : "#7c3aed" }}>{item.icon}</span>
                     {item.label}
                   </Link>
                 );
@@ -168,9 +190,16 @@ export default function Navbar() {
               <button
                 onClick={() => setMobileOpen(!mobileOpen)}
                 style={{
-                  color: "#ffffff",
+                  color: "#4c1d95",
                   fontSize: "1.4rem",
-                  padding: "0.3rem"
+                  padding: "0.3rem",
+                  background: "rgba(124,58,237,0.1)",
+                  borderRadius: "0.5rem",
+                  border: "1px solid rgba(124,58,237,0.2)",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center"
                 }}
                 className="mobile-toggle-btn"
                 aria-label="Toggle menu"

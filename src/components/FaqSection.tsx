@@ -13,9 +13,9 @@ export default function FaqSection() {
 
   return (
     <section className="section" style={{
-      background: "linear-gradient(180deg, #160e36 0%, #0d0724 100%)",
-      borderTop: "1px solid rgba(168, 85, 247, 0.2)",
-      borderBottom: "1px solid rgba(168, 85, 247, 0.2)"
+      background: "linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%)",
+      borderTop: "1px solid rgba(37, 99, 235, 0.15)",
+      borderBottom: "1px solid rgba(37, 99, 235, 0.15)"
     }}>
       <div className="container" style={{ maxWidth: "840px" }}>
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
@@ -41,7 +41,7 @@ export default function FaqSection() {
                   borderRadius: "1rem",
                   overflow: "hidden",
                   transition: "all 0.3s ease",
-                  border: isOpen ? "1px solid rgba(168, 85, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)"
+                  border: isOpen ? "1px solid rgba(37, 99, 235, 0.35)" : "1px solid rgba(37, 99, 235, 0.1)"
                 }}
               >
                 <button
@@ -54,16 +54,16 @@ export default function FaqSection() {
                     justifyContent: "space-between",
                     gap: "1rem",
                     textAlign: "left",
-                    color: isOpen ? "#c084fc" : "#fff",
+                    color: isOpen ? "#2563eb" : "#0a1628",
                     fontWeight: 600,
                     fontSize: "1rem"
                   }}
                 >
                   <span style={{ display: "flex", alignItems: "center", gap: "0.8rem" }}>
-                    <FaQuestionCircle style={{ color: "#a855f7", flexShrink: 0 }} />
+                    <FaQuestionCircle style={{ color: "#2563eb", flexShrink: 0 }} />
                     {faq.question}
                   </span>
-                  <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
+                  <span style={{ fontSize: "0.85rem", color: "#6b7280" }}>
                     {isOpen ? <FaMinus /> : <FaPlus />}
                   </span>
                 </button>
@@ -72,9 +72,9 @@ export default function FaqSection() {
                   <div style={{
                     padding: "0 1.5rem 1.5rem 3.3rem",
                     fontSize: "0.92rem",
-                    color: "var(--text-muted)",
+                    color: "#475569",
                     lineHeight: 1.7,
-                    borderTop: "1px solid rgba(255,255,255,0.04)"
+                    borderTop: "1px solid rgba(37,99,235,0.08)"
                   }}>
                     {faq.answer}
                   </div>

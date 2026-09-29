@@ -18,8 +18,8 @@ export default function Footer() {
       }
     `}</style>
       <footer style={{
-        background: "rgba(12, 9, 26, 0.95)",
-        borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+        background: "#f8f7ff",
+        borderTop: "1px solid rgba(124, 58, 237, 0.1)",
         paddingTop: "4rem",
         paddingBottom: "2rem"
       }}>
@@ -55,7 +55,7 @@ export default function Footer() {
 
             {/* Col 2: Quick Links */}
             <div>
-              <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#fff", marginBottom: "1.2rem" }}>
+              <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#0f0a1e", marginBottom: "1.2rem" }}>
                 Quick Navigation
               </h4>
               <ul style={{ display: "flex", flexDirection: "column", gap: "0.7rem", fontSize: "0.88rem", color: "var(--text-muted)" }}>
@@ -69,7 +69,7 @@ export default function Footer() {
 
             {/* Col 3: Domains */}
             <div>
-              <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#fff", marginBottom: "1.2rem" }}>
+              <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#0f0a1e", marginBottom: "1.2rem" }}>
                 Popular Domains
               </h4>
               <ul style={{ display: "flex", flexDirection: "column", gap: "0.7rem", fontSize: "0.88rem", color: "var(--text-muted)" }}>
@@ -84,7 +84,7 @@ export default function Footer() {
 
             {/* Col 4: Contact & Legal */}
             <div>
-              <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#fff", marginBottom: "1.2rem" }}>
+              <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#0f0a1e", marginBottom: "1.2rem" }}>
                 Contact & Legal
               </h4>
               <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem", fontSize: "0.88rem", color: "var(--text-muted)", marginBottom: "1.2rem" }}>
@@ -110,10 +110,10 @@ export default function Footer() {
           {/* Bottom Bar */}
           <div className="footer-bottom" style={{
             paddingTop: "1.8rem",
-            borderTop: "1px solid rgba(255,255,255,0.06)",
+            borderTop: "1px solid rgba(124,58,237,0.08)",
             textAlign: "center",
             fontSize: "0.82rem",
-            color: "var(--text-subtle)"
+            color: "#9ca3af"
           }}>
             © {new Date().getFullYear()} Pioneer Technologies. All rights reserved. Building India&apos;s Next Generation of Skilled Tech Professionals.
           </div>

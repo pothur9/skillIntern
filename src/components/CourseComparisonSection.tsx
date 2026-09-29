@@ -49,9 +49,9 @@ export default function CourseComparisonSection() {
             fontWeight: 800,
             textTransform: "uppercase",
             letterSpacing: "0.1em",
-            color: "#4f46e5",
-            background: "#eef2ff",
-            border: "1px solid #c7d2fe",
+            color: "#2563eb",
+            background: "#dbeafe",
+            border: "1px solid #bfdbfe",
             marginBottom: "1rem"
           }}>
             ✦ Career Matrix
@@ -63,7 +63,7 @@ export default function CourseComparisonSection() {
             color: "#0f172a",
             marginBottom: "0.8rem"
           }}>
-            Compare Our <span style={{ color: "#4f46e5", background: "rgba(238, 242, 255, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>5 Flagship Courses</span>
+            Compare Our <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>5 Flagship Courses</span>
           </h2>
           <p style={{ fontSize: "1rem", color: "#475569", maxWidth: "600px", margin: "0 auto" }}>
             Analyze skills, salary outcomes, industry tools, and career prospects for each program to pick your ideal path.
@@ -93,12 +93,12 @@ export default function CourseComparisonSection() {
                   cursor: "pointer",
                   color: isActive ? "#ffffff" : "#475569",
                   background: isActive
-                    ? "linear-gradient(135deg, #4f46e5, #7c3aed)"
+                    ? "linear-gradient(135deg, #2563eb, #1d4ed8)"
                     : "#ffffff",
                   border: isActive
-                    ? "1px solid #4f46e5"
+                    ? "1px solid #2563eb"
                     : "1px solid #e2e8f0",
-                  boxShadow: isActive ? "0 8px 24px rgba(79,70,229,0.3)" : "0 2px 8px rgba(0,0,0,0.04)"
+                  boxShadow: isActive ? "0 8px 24px rgba(37,99,235,0.3)" : "0 2px 8px rgba(0,0,0,0.04)"
                 }}
               >
                 {course.title}
@@ -134,7 +134,7 @@ export default function CourseComparisonSection() {
                 <span style={{
                   padding: "0.3rem 0.8rem",
                   borderRadius: "0.5rem",
-                  background: "linear-gradient(135deg, #4f46e5, #7c3aed)",
+                  background: "linear-gradient(135deg, #2563eb, #1d4ed8)",
                   color: "#fff",
                   fontSize: "0.75rem",
                   fontWeight: 700
@@ -187,7 +187,7 @@ export default function CourseComparisonSection() {
                   background: "#f8fafc",
                   border: "1px solid #e2e8f0"
                 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#4f46e5", fontSize: "0.85rem", fontWeight: 700, marginBottom: "0.3rem" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#2563eb", fontSize: "0.85rem", fontWeight: 700, marginBottom: "0.3rem" }}>
                     <FaBriefcase /> Hiring Openings
                   </div>
                   <div style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.2rem", fontWeight: 800, color: "#0f172a" }}>
@@ -205,7 +205,7 @@ export default function CourseComparisonSection() {
               border: "1px solid #e2e8f0"
             }}>
               <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#0f172a", marginBottom: "1rem", display: "flex", alignItems: "center", gap: "0.5rem", fontWeight: 700 }}>
-                <FaCode style={{ color: "#4f46e5" }} /> Primary Tools &amp; Technologies
+                <FaCode style={{ color: "#2563eb" }} /> Primary Tools &amp; Technologies
               </h4>
 
               <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "1.8rem" }}>
@@ -215,9 +215,9 @@ export default function CourseComparisonSection() {
                     style={{
                       padding: "0.4rem 0.8rem",
                       borderRadius: "0.6rem",
-                      background: "#eef2ff",
-                      border: "1px solid #c7d2fe",
-                      color: "#3730a3",
+                      background: "#dbeafe",
+                      border: "1px solid #bfdbfe",
+                      color: "#1e40af",
                       fontSize: "0.82rem",
                       fontWeight: 600
                     }}
@@ -234,7 +234,7 @@ export default function CourseComparisonSection() {
               <div style={{ display: "flex", flexDirection: "column", gap: "0.7rem", marginBottom: "2rem" }}>
                 {activeCourse.modules?.slice(0, 3).map((mod, idx) => (
                   <div key={idx} style={{ fontSize: "0.85rem", color: "#475569", display: "flex", alignItems: "flex-start", gap: "0.5rem" }}>
-                    <span style={{ color: "#4f46e5", fontWeight: 700 }}>•</span>
+                    <span style={{ color: "#2563eb", fontWeight: 700 }}>•</span>
                     <div>
                       <strong style={{ color: "#0f172a" }}>{mod.title}:</strong> {mod.topics.join(", ")}
                     </div>

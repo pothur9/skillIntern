@@ -72,23 +72,23 @@ export default function ProjectsShowcaseSection() {
     <section
       className="section"
       style={{
-        background: "radial-gradient(ellipse at 50% 0%, rgba(124, 58, 237, 0.12) 0%, transparent 65%), linear-gradient(180deg, #09071c 0%, #0d0a26 50%, #100b2e 100%)",
+        background: "radial-gradient(ellipse at 50% 0%, rgba(37, 99, 235, 0.1) 0%, transparent 65%), linear-gradient(180deg, #f0f7ff 0%, #ffffff 50%, #eff6ff 100%)",
         position: "relative",
-        borderTop: "1px solid rgba(168, 85, 247, 0.2)",
-        borderBottom: "1px solid rgba(168, 85, 247, 0.2)",
-        color: "#ffffff"
+        borderTop: "1px solid rgba(37, 99, 235, 0.15)",
+        borderBottom: "1px solid rgba(37, 99, 235, 0.15)",
+        color: "#0a1628"
       }}
     >
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
-          <div className="section-badge" style={{ margin: "0 auto 1rem", background: "rgba(168,85,247,0.18)", border: "1px solid rgba(168,85,247,0.35)", color: "#c084fc" }}>
+          <div className="section-badge" style={{ margin: "0 auto 1rem", background: "rgba(37,99,235,0.1)", border: "1px solid rgba(37,99,235,0.25)", color: "#2563eb" }}>
             <FaLaptopCode style={{ display: "inline", marginRight: "0.4rem" }} /> Hands-on Capstone Portfolio
           </div>
-          <h2 className="section-title" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)" }}>
+          <h2 className="section-title" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", color: "#0a1628" }}>
             Real-World Projects <span className="gradient-text">You Will Build</span>
           </h2>
-          <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: "680px" }}>
+          <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: "680px", color: "#475569" }}>
             Every one of our 6 career programs includes mandatory production-grade capstone projects so you graduate with a job-ready portfolio.
           </p>
         </div>
@@ -113,8 +113,8 @@ export default function ProjectsShowcaseSection() {
                 padding: "2rem",
                 display: "flex",
                 flexDirection: "column",
-                background: "rgba(18, 14, 42, 0.75)",
-                border: "1px solid rgba(168, 85, 247, 0.25)",
+                background: "rgba(255, 255, 255, 0.95)",
+                border: "1px solid rgba(37, 99, 235, 0.15)",
                 position: "relative",
                 overflow: "hidden"
               }}
@@ -124,9 +124,9 @@ export default function ProjectsShowcaseSection() {
                 <span style={{
                   padding: "0.25rem 0.7rem",
                   borderRadius: "0.5rem",
-                  background: "rgba(168, 85, 247, 0.15)",
-                  border: "1px solid rgba(168, 85, 247, 0.35)",
-                  color: "#c084fc",
+                  background: "rgba(37, 99, 235, 0.1)",
+                  border: "1px solid rgba(37, 99, 235, 0.25)",
+                  color: "#2563eb",
                   fontSize: "0.75rem",
                   fontWeight: 700
                 }}>
@@ -143,7 +143,7 @@ export default function ProjectsShowcaseSection() {
                 fontFamily: "var(--font-orbitron)",
                 fontSize: "1.15rem",
                 fontWeight: 800,
-                color: "#ffffff",
+                color: "#0a1628",
                 lineHeight: 1.35,
                 marginBottom: "0.8rem"
               }}>
@@ -153,7 +153,7 @@ export default function ProjectsShowcaseSection() {
               {/* Description */}
               <p style={{
                 fontSize: "0.88rem",
-                color: "rgba(255, 255, 255, 0.65)",
+                color: "#475569",
                 lineHeight: 1.6,
                 marginBottom: "1.5rem",
                 flex: 1
@@ -165,17 +165,17 @@ export default function ProjectsShowcaseSection() {
               <div style={{
                 padding: "0.5rem 0.8rem",
                 borderRadius: "0.6rem",
-                background: "rgba(255,255,255,0.03)",
-                border: "1px solid rgba(255,255,255,0.08)",
+                background: "rgba(37,99,235,0.05)",
+                border: "1px solid rgba(37,99,235,0.12)",
                 fontSize: "0.8rem",
-                color: "#818cf8",
+                color: "#2563eb",
                 fontWeight: 600,
                 marginBottom: "1.2rem",
                 display: "flex",
                 alignItems: "center",
                 gap: "0.5rem"
               }}>
-                <FaRocket style={{ color: "#c084fc" }} /> {proj.metrics}
+                <FaRocket style={{ color: "#2563eb" }} /> {proj.metrics}
               </div>
 
               {/* Tools Tags */}
@@ -187,9 +187,9 @@ export default function ProjectsShowcaseSection() {
                       fontSize: "0.72rem",
                       padding: "0.2rem 0.5rem",
                       borderRadius: "0.4rem",
-                      background: "rgba(255,255,255,0.05)",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      color: "#cbd5e1"
+                      background: "rgba(37,99,235,0.06)",
+                      border: "1px solid rgba(37,99,235,0.12)",
+                      color: "#2563eb"
                     }}
                   >
                     {t}

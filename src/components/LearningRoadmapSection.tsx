@@ -9,7 +9,7 @@ const PHASES = [
     duration: "Weeks 1 - 3",
     desc: "Master language syntax, development tools, foundational math/logic, and core frameworks from scratch under direct mentor supervision.",
     icon: <FaLaptopCode />,
-    color: "#4f46e5"
+    color: "#2563eb"
   },
   {
     step: "PHASE 02",
@@ -17,7 +17,7 @@ const PHASES = [
     duration: "Weeks 4 - 8",
     desc: "Dive into production architecture, complex data models, APIs, analytics dashboards, machine learning models, or performance advertising campaigns.",
     icon: <FaProjectDiagram />,
-    color: "#7c3aed"
+    color: "#1d4ed8"
   },
   {
     step: "PHASE 03",
@@ -67,9 +67,9 @@ export default function LearningRoadmapSection() {
             fontWeight: 800,
             textTransform: "uppercase",
             letterSpacing: "0.1em",
-            color: "#4f46e5",
-            background: "#eef2ff",
-            border: "1px solid #c7d2fe",
+            color: "#2563eb",
+            background: "#dbeafe",
+            border: "1px solid #bfdbfe",
             marginBottom: "1rem"
           }}>
             ✦ Proven Methodology
@@ -81,7 +81,7 @@ export default function LearningRoadmapSection() {
             color: "#0f172a",
             marginBottom: "0.8rem"
           }}>
-            Your 90-Day <span style={{ color: "#4f46e5", background: "rgba(238, 242, 255, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>Skill Mastery Roadmap</span>
+            Your 90-Day <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>Skill Mastery Roadmap</span>
           </h2>
           <p style={{ fontSize: "1rem", color: "#475569", maxWidth: "600px", margin: "0 auto" }}>
             Every one of our 5 courses follows a structured 4-phase curriculum designed to take you from absolute beginner to industry-ready candidate.

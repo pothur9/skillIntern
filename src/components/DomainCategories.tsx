@@ -83,11 +83,11 @@ export default function DomainCategories() {
     <section
       className="section"
       style={{
-        background: "linear-gradient(135deg, #180d3d 0%, #251254 50%, #150b33 100%)",
+        background: "linear-gradient(135deg, #f0f7ff 0%, #eff6ff 50%, #f0f7ff 100%)",
         position: "relative",
         overflow: "hidden",
-        borderTop: "1px solid rgba(168, 85, 247, 0.15)",
-        borderBottom: "1px solid rgba(168, 85, 247, 0.15)"
+        borderTop: "1px solid rgba(37,99,235,0.15)",
+        borderBottom: "1px solid rgba(37,99,235,0.15)"
       }}
     >
       {/* Background Ambient Lighting */}
@@ -97,20 +97,20 @@ export default function DomainCategories() {
         right: "-10%",
         width: "500px",
         height: "500px",
-        background: "radial-gradient(circle, rgba(168,85,247,0.15) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(37,99,235,0.15) 0%, transparent 70%)",
         pointerEvents: "none"
       }} />
 
       <div className="container" style={{ position: "relative", zIndex: 10 }}>
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-          <div className="section-badge" style={{ margin: "0 auto 0.8rem", background: "rgba(168,85,247,0.2)", border: "1px solid rgba(168,85,247,0.4)", color: "#e9d5ff" }}>
+          <div className="section-badge" style={{ margin: "0 auto 0.8rem", background: "rgba(37,99,235,0.1)", border: "1px solid rgba(37,99,235,0.25)", color: "#2563eb" }}>
             <span>6 Flagship Tracks</span>
           </div>
-          <h2 className="section-title" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)" }}>
+          <h2 className="section-title" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#0a1628" }}>
             Explore Our <span className="gradient-text">Career Tracks</span>
           </h2>
-          <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: "600px" }}>
+          <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: "600px", color: "#475569" }}>
             Pick your specialization from our 6 high-demand career programs designed for immediate industry hiring.
           </p>
         </div>
@@ -127,8 +127,8 @@ export default function DomainCategories() {
                 padding: "1.3rem",
                 display: "flex",
                 flexDirection: "column",
-                background: "rgba(22, 14, 52, 0.7)",
-                border: "1px solid rgba(168, 85, 247, 0.25)",
+                background: "rgba(255, 255, 255, 0.95)",
+                border: "1px solid rgba(37, 99, 235, 0.2)",
                 transition: "all 0.3s ease",
                 height: "100%",
                 textDecoration: "none",
@@ -159,7 +159,7 @@ export default function DomainCategories() {
                 <div style={{
                   position: "absolute",
                   inset: 0,
-                  background: "linear-gradient(to top, rgba(18, 11, 44, 0.9) 0%, transparent 60%)"
+                  background: "linear-gradient(to top, rgba(255, 255, 255, 0.0) 0%, transparent 60%)"
                 }} />
 
                 <div style={{
@@ -169,13 +169,13 @@ export default function DomainCategories() {
                   width: "34px",
                   height: "34px",
                   borderRadius: "10px",
-                  background: "rgba(124, 58, 237, 0.4)",
+                  background: "rgba(37, 99, 235, 0.15)",
                   backdropFilter: "blur(8px)",
-                  border: "1px solid rgba(255, 255, 255, 0.25)",
+                  border: "1px solid rgba(37, 99, 235, 0.25)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#fff",
+                  color: "#2563eb",
                   fontSize: "1rem"
                 }}>
                   {domain.icon}
@@ -189,10 +189,10 @@ export default function DomainCategories() {
                   fontWeight: 700,
                   padding: "0.2rem 0.5rem",
                   borderRadius: "0.4rem",
-                  background: "rgba(0, 0, 0, 0.6)",
+                  background: "rgba(255, 255, 255, 0.9)",
                   backdropFilter: "blur(6px)",
-                  color: "#c084fc",
-                  border: "1px solid rgba(255, 255, 255, 0.15)"
+                  color: "#2563eb",
+                  border: "1px solid rgba(37, 99, 235, 0.2)"
                 }}>
                   Track 0{idx + 1}
                 </span>
@@ -203,7 +203,7 @@ export default function DomainCategories() {
                 fontFamily: "var(--font-orbitron)",
                 fontSize: "1.05rem",
                 fontWeight: 700,
-                color: "#fff",
+                color: "#0a1628",
                 marginBottom: "0.25rem",
                 lineHeight: 1.3
               }}>
@@ -212,7 +212,7 @@ export default function DomainCategories() {
 
               <div style={{
                 fontSize: "0.78rem",
-                color: "#c084fc",
+                color: "#2563eb",
                 fontWeight: 600,
                 marginBottom: "0.75rem"
               }}>
@@ -221,7 +221,7 @@ export default function DomainCategories() {
 
               <p style={{
                 fontSize: "0.82rem",
-                color: "var(--text-muted)",
+                color: "#475569",
                 lineHeight: 1.5,
                 marginBottom: "0.8rem",
                 flex: 1
@@ -237,8 +237,8 @@ export default function DomainCategories() {
                 marginBottom: "0.8rem",
                 padding: "0.4rem 0.7rem",
                 borderRadius: "0.6rem",
-                background: "rgba(124, 58, 237, 0.12)",
-                border: "1px solid rgba(124, 58, 237, 0.25)"
+                background: "rgba(37, 99, 235, 0.08)",
+                border: "1px solid rgba(37, 99, 235, 0.18)"
               }}>
                 <span style={{
                   fontFamily: "var(--font-orbitron)",
@@ -258,7 +258,7 @@ export default function DomainCategories() {
                 <span style={{
                   fontSize: "0.68rem",
                   fontWeight: 700,
-                  color: "#c084fc",
+                  color: "#2563eb",
                   marginLeft: "auto"
                 }}>
                   33% OFF
@@ -276,7 +276,7 @@ export default function DomainCategories() {
                       borderRadius: "0.4rem",
                       background: "rgba(255,255,255,0.04)",
                       border: "1px solid rgba(255,255,255,0.08)",
-                      color: "#cbd5e1"
+                      color: "#475569"
                     }}
                   >
                     {s}
@@ -329,8 +329,8 @@ export default function DomainCategories() {
         }
         .track-card:hover {
           transform: translateY(-6px);
-          border-color: rgba(168, 85, 247, 0.5) !important;
-          box-shadow: 0 12px 32px rgba(124, 58, 237, 0.3);
+          border-color: rgba(37, 99, 235, 0.4) !important;
+          box-shadow: 0 12px 32px rgba(37, 99, 235, 0.2);
         }
         .track-card:hover .track-img {
           transform: scale(1.08);

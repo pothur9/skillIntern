@@ -10,7 +10,7 @@ export default function LoginPage() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      background: "radial-gradient(ellipse at 50% 30%, rgba(147, 51, 234, 0.15), #0c091a 70%)",
+      background: "radial-gradient(ellipse at 50% 30%, rgba(124, 58, 237, 0.08), #f5f3ff 70%)",
       padding: "2rem 1.5rem"
     }}>
       <div className="glass-card" style={{
@@ -37,7 +37,7 @@ export default function LoginPage() {
           </div>
         </Link>
 
-        <h2 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.3rem", color: "#fff", marginBottom: "0.4rem" }}>
+        <h2 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.3rem", color: "#0f0a1e", marginBottom: "0.4rem" }}>
           Welcome Back
         </h2>
         <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "2rem" }}>
@@ -57,9 +57,9 @@ export default function LoginPage() {
                   width: "100%",
                   padding: "0.75rem 1rem 0.75rem 2.5rem",
                   borderRadius: "0.6rem",
-                  background: "rgba(255,255,255,0.05)",
-                  border: "1px solid rgba(255,255,255,0.15)",
-                  color: "#fff",
+                  background: "#ffffff",
+                  border: "1px solid rgba(124,58,237,0.2)",
+                  color: "#0f0a1e",
                   outline: "none"
                 }}
               />
@@ -79,9 +79,9 @@ export default function LoginPage() {
                   width: "100%",
                   padding: "0.75rem 1rem 0.75rem 2.5rem",
                   borderRadius: "0.6rem",
-                  background: "rgba(255,255,255,0.05)",
-                  border: "1px solid rgba(255,255,255,0.15)",
-                  color: "#fff",
+                  background: "#ffffff",
+                  border: "1px solid rgba(124,58,237,0.2)",
+                  color: "#0f0a1e",
                   outline: "none"
                 }}
               />
@@ -96,7 +96,7 @@ export default function LoginPage() {
 
         <div style={{ marginTop: "1.8rem", fontSize: "0.85rem", color: "var(--text-muted)" }}>
           Don&apos;t have an account?{" "}
-          <Link href="/signup" style={{ color: "#c084fc", fontWeight: 600 }}>
+          <Link href="/signup" style={{ color: "#7c3aed", fontWeight: 600 }}>
             Sign Up
           </Link>
         </div>

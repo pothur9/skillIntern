@@ -7,7 +7,7 @@ const ROW_2 = ["/logos/logo6.png", "/logos/logo7.png", "/logos/logo8.png", "/log
 const ROW_3 = ["/logos/logo11.png", "/logos/logo12.png", "/logos/logo13.png", "/logos/logo14.png", "/logos/logo15.png"];
 
 const STATS = [
-  { value: "500+", label: "Hiring Partners", icon: FaBuilding, color: "#7c3aed", bg: "rgba(124,58,237,0.08)" },
+  { value: "500+", label: "Hiring Partners", icon: FaBuilding, color: "#2563eb", bg: "rgba(37,99,235,0.08)" },
   { value: "12 LPA", label: "Highest Package", icon: FaTrophy, color: "#f59e0b", bg: "rgba(245,158,11,0.08)" },
   { value: "6.5 LPA", label: "Average Package", icon: FaChartLine, color: "#3b82f6", bg: "rgba(59,130,246,0.08)" },
   { value: "95%", label: "Placement Rate", icon: FaGraduationCap, color: "#10b981", bg: "rgba(16,185,129,0.08)" }
@@ -89,8 +89,8 @@ export default function BrandsMarquee() {
     <section style={{
       position: "relative",
       padding: "4.5rem 0",
-      background: "linear-gradient(180deg, #f8fafc 0%, #f1f5f9 50%, #f8fafc 100%)",
-      color: "#0f172a",
+      background: "linear-gradient(180deg, #f0f7ff 0%, #eff6ff 50%, #f0f7ff 100%)",
+      color: "#0a1628",
       overflow: "hidden"
     }}>
       {/* Background Dot Matrix */}
@@ -110,7 +110,7 @@ export default function BrandsMarquee() {
         width: "400px",
         height: "300px",
         borderRadius: "50%",
-        background: "radial-gradient(circle, rgba(124,58,237,0.06) 0%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%)",
         filter: "blur(80px)",
         pointerEvents: "none"
       }} />
@@ -128,9 +128,9 @@ export default function BrandsMarquee() {
             fontWeight: 800,
             textTransform: "uppercase",
             letterSpacing: "0.1em",
-            color: "#7c3aed",
-            background: "#ede9fe",
-            border: "1px solid rgba(124,58,237,0.15)",
+            color: "#2563eb",
+            background: "#dbeafe",
+            border: "1px solid rgba(37,99,235,0.15)",
             marginBottom: "1rem"
           }}>
             ✦ Our Placement Partners
@@ -140,10 +140,10 @@ export default function BrandsMarquee() {
             fontFamily: "var(--font-orbitron)",
             fontSize: "clamp(1.8rem, 4vw, 3rem)",
             fontWeight: 800,
-            color: "#0f172a",
+            color: "#0a1628",
             marginBottom: "0.8rem"
           }}>
-            Secure Placements with <span style={{ color: "#7c3aed" }}>Top Brands</span>
+            Secure Placements with <span style={{ color: "#2563eb" }}>Top Brands</span>
           </h2>
 
           <p style={{ fontSize: "1rem", color: "#64748b", maxWidth: "560px", margin: "0 auto" }}>
@@ -166,7 +166,7 @@ export default function BrandsMarquee() {
             top: 0,
             bottom: 0,
             width: "120px",
-            background: "linear-gradient(to right, #f8fafc, transparent)",
+            background: "linear-gradient(to right, #f0f7ff, transparent)",
             zIndex: 20,
             pointerEvents: "none"
           }} />
@@ -176,7 +176,7 @@ export default function BrandsMarquee() {
             top: 0,
             bottom: 0,
             width: "120px",
-            background: "linear-gradient(to left, #f8fafc, transparent)",
+            background: "linear-gradient(to left, #f0f7ff, transparent)",
             zIndex: 20,
             pointerEvents: "none"
           }} />
@@ -221,7 +221,7 @@ export default function BrandsMarquee() {
                   <IconComp />
                 </div>
                 <div>
-                  <div className="bm-stat-value" style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.1rem", fontWeight: 800, color: "#0f172a", lineHeight: 1.2 }}>
+                  <div className="bm-stat-value" style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.1rem", fontWeight: 800, color: "#0a1628", lineHeight: 1.2 }}>
                     {s.value}
                   </div>
                   <div style={{ fontSize: "0.74rem", color: "#64748b", marginTop: "0.15rem", lineHeight: 1.3 }}>
