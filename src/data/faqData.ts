@@ -10,7 +10,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: "What kind of courses does Pioneer Technologies offer?",
-    answer: "We offer 6 job-oriented flagship courses: Full Stack Web Development, Data Science, Data Analytics, Artificial Intelligence, Generative AI (Gen AI), and Digital Marketing. All programs are designed to meet industry standards and boost employability."
+    answer: "We offer one all-in-one Complete Tech Mastery Package that bundles three flagship tracks — Full Stack Web Development, Data Science, and Artificial Intelligence (AI/ML) — at a single combo price of ₹8,000. The program is designed to meet industry standards and boost employability."
   },
   {
     question: "Are the courses live or recorded?",

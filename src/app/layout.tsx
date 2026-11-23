@@ -12,18 +12,17 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.inspireai.in"),
   title: "Pioneer Technologies — India's Leading Career Platform",
   description:
-    "Master in-demand skills in Full Stack Web Development, AI, Cyber Security, CAD Engineering, UI/UX Design, and Digital Marketing with Pioneer Technologies.",
+    "Master in-demand skills with our all-in-one Complete Tech Mastery Package — Full Stack Web Development, Data Science, and Artificial Intelligence (AI/ML) — at one combo price with Pioneer Technologies.",
   keywords: [
     "Pioneer Technologies",
     "online courses",
     "full stack development",
-    "cyber security",
-    "ethical hacking",
-    "data analytics",
+    "data science",
+    "artificial intelligence",
+    "machine learning",
     "AI course",
-    "CAD engineering",
-    "UI UX design",
-    "digital marketing",
+    "web development",
+    "tech package",
     "internships",
     "certifications"
   ],
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Pioneer Technologies",
     title: "Pioneer Technologies — India's Leading Career Platform",
     description:
-      "Master in-demand skills in tech, CAD, design, and business with industry-ready certification programs.",
+      "Master Full Stack Web Development, Data Science & AI/ML with our all-in-one Complete Tech Mastery Package.",
   },
 };
 

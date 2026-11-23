@@ -84,7 +84,7 @@ export default function LearningRoadmapSection() {
             Your 90-Day <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>Skill Mastery Roadmap</span>
           </h2>
           <p style={{ fontSize: "1rem", color: "#475569", maxWidth: "600px", margin: "0 auto" }}>
-            Every one of our 5 courses follows a structured 4-phase curriculum designed to take you from absolute beginner to industry-ready candidate.
+            Our Complete Tech Mastery Package follows a structured 4-phase curriculum designed to take you from absolute beginner to industry-ready candidate.
           </p>
         </div>
 

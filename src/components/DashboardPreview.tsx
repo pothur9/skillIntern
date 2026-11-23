@@ -123,9 +123,9 @@ export default function DashboardPreview() {
             </div>
 
             <div style={{ background: "rgba(37,99,235,0.05)", padding: "1.2rem", borderRadius: "1rem", marginBottom: "1rem" }}>
-              <div style={{ fontSize: "0.75rem", color: "#2563eb", fontWeight: 700, marginBottom: "0.3rem" }}>ACTIVE COURSE</div>
+              <div style={{ fontSize: "0.75rem", color: "#2563eb", fontWeight: 700, marginBottom: "0.3rem" }}>ACTIVE PROGRAM</div>
               <div style={{ fontFamily: "var(--font-orbitron)", fontSize: "1.1rem", fontWeight: 700, color: "#0a1628", marginBottom: "0.8rem" }}>
-                Full Stack Web Development
+                Complete Tech Mastery Package
               </div>
               <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "#6b7280", marginBottom: "0.4rem" }}>
                 <span>Overall Completion</span>

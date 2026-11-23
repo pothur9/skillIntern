@@ -1,80 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { FaLaptopCode, FaBrain, FaChartBar, FaDatabase, FaBullhorn, FaArrowRight } from "react-icons/fa";
+import { FaLaptopCode, FaArrowRight } from "react-icons/fa";
 
 const DOMAINS_DATA = [
   {
-    title: "Full Stack Web Development",
-    subtitle: "React 19, Next.js & Node.js",
-    desc: "Master modern web engineering, REST APIs, databases & cloud deployment.",
-    image: "/fullstack_course.png",
-    icon: <FaLaptopCode />,
-    price: "₹60,000",
-    originalPrice: "₹90,000",
-    skills: ["React & Next.js", "Node & MongoDB"],
-    href: "/courses/FULLSTACK-001",
-    gradient: "from-blue-500 to-indigo-600"
-  },
-  {
-    title: "Data Science",
-    subtitle: "Python, ML & Predictive Models",
-    desc: "Transform raw data into predictive intelligence with Python & Pandas.",
-    image: "/datascience_course.png",
-    icon: <FaDatabase />,
-    price: "₹60,000",
-    originalPrice: "₹90,000",
-    skills: ["Python & Pandas", "Machine Learning"],
-    href: "/courses/DATASCI-002",
-    gradient: "from-purple-500 to-indigo-600"
-  },
-  {
-    title: "Data Analytics",
-    subtitle: "SQL, Power BI & Tableau",
-    desc: "Analyze business metrics and build interactive executive dashboards.",
-    image: "/dataanalytics_course.png",
-    icon: <FaChartBar />,
-    price: "₹60,000",
-    originalPrice: "₹90,000",
-    skills: ["SQL & Power BI", "Advanced Excel"],
-    href: "/courses/DATAANALYTICS-003",
-    gradient: "from-pink-500 to-purple-600"
-  },
-  {
-    title: "Artificial Intelligence",
-    subtitle: "Deep Learning, PyTorch & Vision",
-    desc: "Build AI applications with PyTorch, Neural Networks, Computer Vision & NLP.",
+    title: "Complete Tech Mastery Package",
+    subtitle: "Data Science • Web Dev • AI/ML Combo",
+    desc: "One all-in-one package bundling Full Stack Web Development, Data Science & Artificial Intelligence (AI/ML) — React, Node, Python, ML, Deep Learning & Computer Vision.",
     image: "/aiml_course.png",
-    icon: <FaBrain />,
-    price: "₹60,000",
-    originalPrice: "₹90,000",
-    skills: ["PyTorch & Vision", "Neural Networks"],
-    href: "/courses/AI-004",
-    gradient: "from-purple-600 to-pink-600"
-  },
-  {
-    title: "Generative AI (Gen AI)",
-    subtitle: "LLMs, RAG, Prompt Engineering & Agents",
-    desc: "Build enterprise Gen AI apps with LangChain, OpenAI APIs, Vector DBs & LLMs.",
-    image: "/genai_course.png",
-    icon: <FaBrain />,
-    price: "₹60,000",
-    originalPrice: "₹90,000",
-    skills: ["LangChain & RAG", "LLMs & Vector DBs"],
-    href: "/courses/GENAI-005",
-    gradient: "from-rose-600 to-pink-600"
-  },
-  {
-    title: "Digital Marketing",
-    subtitle: "SEO, Meta Ads & Growth",
-    desc: "Scale brand revenues with paid performance ads & GA4 conversion funnels.",
-    image: "/digitalmarketing_course.png",
-    icon: <FaBullhorn />,
-    price: "₹40,000",
-    originalPrice: "₹60,000",
-    skills: ["Google & Meta Ads", "SEO & GA4"],
-    href: "/courses/DIGITALMKTG-006",
-    gradient: "from-teal-500 to-emerald-600"
+    icon: <FaLaptopCode />,
+    price: "₹8,000",
+    originalPrice: "₹1,80,000",
+    skills: ["Web Dev", "Data Science", "AI/ML"],
+    href: "/courses/COMBO-001",
+    gradient: "from-indigo-500 to-purple-600"
   }
 ];
 
@@ -105,17 +45,17 @@ export default function DomainCategories() {
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
           <div className="section-badge" style={{ margin: "0 auto 0.8rem", background: "rgba(37,99,235,0.1)", border: "1px solid rgba(37,99,235,0.25)", color: "#2563eb" }}>
-            <span>6 Flagship Tracks</span>
+            <span>Complete Tech Package</span>
           </div>
           <h2 className="section-title" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#0a1628" }}>
-            Explore Our <span className="gradient-text">Career Tracks</span>
+            Explore Our <span className="gradient-text">Complete Package</span>
           </h2>
           <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: "600px", color: "#475569" }}>
-            Pick your specialization from our 6 high-demand career programs designed for immediate industry hiring.
+            Our all-in-one package bundles Full Stack Web Development, Data Science & AI/ML into a single career program built for immediate industry hiring.
           </p>
         </div>
 
-        {/* 5 Cards Container: 1 Row on Large Screens, 2 Rows on Medium Screens */}
+        {/* Featured Package Card */}
         <div className="career-tracks-grid">
           {DOMAINS_DATA.map((domain, idx) => (
             <Link
@@ -123,27 +63,24 @@ export default function DomainCategories() {
               href={domain.href}
               className="glass-card track-card"
               style={{
-                borderRadius: "1.25rem",
-                padding: "1.3rem",
+                borderRadius: "1.5rem",
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "row",
+                overflow: "hidden",
                 background: "rgba(255, 255, 255, 0.95)",
                 border: "1px solid rgba(37, 99, 235, 0.2)",
                 transition: "all 0.3s ease",
-                height: "100%",
                 textDecoration: "none",
                 color: "inherit",
                 cursor: "pointer"
               }}
             >
-              {/* Course Featured Image Header */}
-              <div style={{
-                height: "120px",
-                width: "100%",
-                borderRadius: "0.85rem",
-                overflow: "hidden",
+              {/* Featured Image Side */}
+              <div className="track-img-wrap" style={{
+                width: "360px",
+                minWidth: "360px",
                 position: "relative",
-                marginBottom: "1rem"
+                overflow: "hidden"
               }}>
                 <img
                   src={domain.image}
@@ -159,144 +96,147 @@ export default function DomainCategories() {
                 <div style={{
                   position: "absolute",
                   inset: 0,
-                  background: "linear-gradient(to top, rgba(255, 255, 255, 0.0) 0%, transparent 60%)"
+                  background: "linear-gradient(to right, transparent 55%, rgba(255,255,255,0.55) 100%)"
                 }} />
 
                 <div style={{
                   position: "absolute",
-                  top: "0.5rem",
-                  left: "0.5rem",
-                  width: "34px",
-                  height: "34px",
-                  borderRadius: "10px",
-                  background: "rgba(37, 99, 235, 0.15)",
+                  top: "1rem",
+                  left: "1rem",
+                  width: "44px",
+                  height: "44px",
+                  borderRadius: "12px",
+                  background: "rgba(255, 255, 255, 0.85)",
                   backdropFilter: "blur(8px)",
                   border: "1px solid rgba(37, 99, 235, 0.25)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   color: "#2563eb",
-                  fontSize: "1rem"
+                  fontSize: "1.2rem"
                 }}>
                   {domain.icon}
                 </div>
 
                 <span style={{
                   position: "absolute",
-                  top: "0.5rem",
-                  right: "0.5rem",
-                  fontSize: "0.68rem",
+                  top: "1rem",
+                  right: "1rem",
+                  fontSize: "0.72rem",
                   fontWeight: 700,
-                  padding: "0.2rem 0.5rem",
-                  borderRadius: "0.4rem",
+                  padding: "0.3rem 0.7rem",
+                  borderRadius: "0.5rem",
                   background: "rgba(255, 255, 255, 0.9)",
                   backdropFilter: "blur(6px)",
                   color: "#2563eb",
                   border: "1px solid rgba(37, 99, 235, 0.2)"
                 }}>
-                  Track 0{idx + 1}
+                  Best Value Combo
                 </span>
               </div>
 
-              {/* Title & Subtitle */}
-              <h3 style={{
-                fontFamily: "var(--font-orbitron)",
-                fontSize: "1.05rem",
-                fontWeight: 700,
-                color: "#0a1628",
-                marginBottom: "0.25rem",
-                lineHeight: 1.3
-              }}>
-                {domain.title}
-              </h3>
-
-              <div style={{
-                fontSize: "0.78rem",
-                color: "#2563eb",
-                fontWeight: 600,
-                marginBottom: "0.75rem"
-              }}>
-                {domain.subtitle}
-              </div>
-
-              <p style={{
-                fontSize: "0.82rem",
-                color: "#475569",
-                lineHeight: 1.5,
-                marginBottom: "0.8rem",
-                flex: 1
-              }}>
-                {domain.desc}
-              </p>
-
-              {/* Pricing Row */}
-              <div style={{
-                display: "flex",
-                alignItems: "baseline",
-                gap: "0.5rem",
-                marginBottom: "0.8rem",
-                padding: "0.4rem 0.7rem",
-                borderRadius: "0.6rem",
-                background: "rgba(37, 99, 235, 0.08)",
-                border: "1px solid rgba(37, 99, 235, 0.18)"
-              }}>
-                <span style={{
-                  fontFamily: "var(--font-orbitron)",
-                  fontSize: "1.1rem",
-                  fontWeight: 800,
-                  color: "#34d399"
-                }}>
-                  {domain.price}
-                </span>
-                <span style={{
-                  fontSize: "0.78rem",
-                  color: "#94a3b8",
-                  textDecoration: "line-through"
-                }}>
-                  {domain.originalPrice}
-                </span>
-                <span style={{
-                  fontSize: "0.68rem",
-                  fontWeight: 700,
+              {/* Content Side */}
+              <div style={{ flex: 1, padding: "2rem", display: "flex", flexDirection: "column" }}>
+                <div style={{
+                  fontSize: "0.8rem",
                   color: "#2563eb",
-                  marginLeft: "auto"
+                  fontWeight: 700,
+                  marginBottom: "0.5rem"
                 }}>
-                  33% OFF
-                </span>
-              </div>
+                  {domain.subtitle}
+                </div>
 
-              {/* Skills Pills */}
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginBottom: "1.2rem" }}>
-                {domain.skills.map((s, i) => (
-                  <span
-                    key={i}
-                    style={{
-                      fontSize: "0.7rem",
+                <h3 style={{
+                  fontFamily: "var(--font-orbitron)",
+                  fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)",
+                  fontWeight: 800,
+                  color: "#0a1628",
+                  marginBottom: "0.6rem",
+                  lineHeight: 1.25
+                }}>
+                  {domain.title}
+                </h3>
+
+                <p style={{
+                  fontSize: "0.95rem",
+                  color: "#475569",
+                  lineHeight: 1.6,
+                  marginBottom: "1.2rem",
+                  flex: 1
+                }}>
+                  {domain.desc}
+                </p>
+
+                {/* Skills Pills */}
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "1.2rem" }}>
+                  {domain.skills.map((s, i) => (
+                    <span
+                      key={i}
+                      style={{
+                        fontSize: "0.78rem",
+                        fontWeight: 600,
+                        padding: "0.3rem 0.8rem",
+                        borderRadius: "0.5rem",
+                        background: "rgba(37,99,235,0.08)",
+                        border: "1px solid rgba(37,99,235,0.15)",
+                        color: "#1e40af"
+                      }}
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Pricing + CTA Row */}
+                <div style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "1rem",
+                  paddingTop: "1.2rem",
+                  borderTop: "1px solid rgba(37, 99, 235, 0.12)"
+                }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "0.6rem" }}>
+                    <span style={{
+                      fontFamily: "var(--font-orbitron)",
+                      fontSize: "1.6rem",
+                      fontWeight: 800,
+                      color: "#0a1628"
+                    }}>
+                      {domain.price}
+                    </span>
+                    <span style={{
+                      fontSize: "0.95rem",
+                      color: "#94a3b8",
+                      textDecoration: "line-through"
+                    }}>
+                      {domain.originalPrice}
+                    </span>
+                    <span style={{
+                      fontSize: "0.72rem",
+                      fontWeight: 700,
+                      color: "#fff",
+                      background: "#10b981",
                       padding: "0.2rem 0.5rem",
-                      borderRadius: "0.4rem",
-                      background: "rgba(255,255,255,0.04)",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      color: "#475569"
+                      borderRadius: "0.4rem"
+                    }}>
+                      96% OFF
+                    </span>
+                  </div>
+
+                  <div
+                    className="btn-secondary"
+                    style={{
+                      padding: "0.7rem 1.4rem",
+                      fontSize: "0.9rem",
+                      gap: "0.5rem",
+                      borderRadius: "0.7rem"
                     }}
                   >
-                    {s}
-                  </span>
-                ))}
-              </div>
-
-              {/* Action Button */}
-              <div
-                className="btn-secondary"
-                style={{
-                  width: "100%",
-                  justifyContent: "center",
-                  padding: "0.55rem 0.8rem",
-                  fontSize: "0.8rem",
-                  gap: "0.4rem",
-                  borderRadius: "0.6rem"
-                }}
-              >
-                Explore Track <FaArrowRight style={{ fontSize: "0.75rem" }} />
+                    Explore Package <FaArrowRight style={{ fontSize: "0.8rem" }} />
+                  </div>
+                </div>
               </div>
             </Link>
           ))}
@@ -309,31 +249,25 @@ export default function DomainCategories() {
           flex-wrap: wrap;
           justify-content: center;
           align-items: stretch;
-          gap: 1.5rem;
-          max-width: 1180px;
+          max-width: 1040px;
           margin: 0 auto;
         }
         .track-card {
           flex: 1 1 100%;
-          max-width: 360px;
-        }
-        @media (min-width: 640px) {
-          .track-card {
-            flex: 0 1 calc(50% - 1rem);
-          }
-        }
-        @media (min-width: 1024px) {
-          .track-card {
-            flex: 0 1 calc(33.333% - 1.25rem);
-          }
+          max-width: 100%;
+          box-shadow: 0 10px 40px rgba(37, 99, 235, 0.12);
         }
         .track-card:hover {
           transform: translateY(-6px);
-          border-color: rgba(37, 99, 235, 0.4) !important;
-          box-shadow: 0 12px 32px rgba(37, 99, 235, 0.2);
+          border-color: rgba(37, 99, 235, 0.45) !important;
+          box-shadow: 0 18px 50px rgba(37, 99, 235, 0.22);
         }
         .track-card:hover .track-img {
-          transform: scale(1.08);
+          transform: scale(1.06);
+        }
+        @media (max-width: 768px) {
+          .track-card { flex-direction: column !important; }
+          .track-img-wrap { width: 100% !important; min-width: 100% !important; height: 200px !important; }
         }
       `}</style>
     </section>

@@ -20,7 +20,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="section-subtitle" style={{ margin: "0 auto 4rem", fontSize: "1.1rem" }}>
-            Pioneer Technologies is India’s premier career-focused EdTech platform. We empower students and working professionals with job-ready skills in Full Stack Web Development, Data Science, Data Analytics, Artificial Intelligence, Generative AI (Gen AI), and Digital Marketing.
+            Pioneer Technologies is India’s premier career-focused EdTech platform. We empower students and working professionals with job-ready skills through our Complete Tech Mastery Package — an all-in-one program bundling Full Stack Web Development, Data Science, and Artificial Intelligence (AI/ML).
           </p>
 
           <div style={{

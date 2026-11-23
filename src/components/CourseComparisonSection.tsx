@@ -63,10 +63,10 @@ export default function CourseComparisonSection() {
             color: "#0f172a",
             marginBottom: "0.8rem"
           }}>
-            Compare Our <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>5 Flagship Courses</span>
+            Explore Our <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>Complete Tech Package</span>
           </h2>
           <p style={{ fontSize: "1rem", color: "#475569", maxWidth: "600px", margin: "0 auto" }}>
-            Analyze skills, salary outcomes, industry tools, and career prospects for each program to pick your ideal path.
+            Explore the skills, salary outcomes, industry tools, and curriculum of our all-in-one Complete Tech Mastery Package.
           </p>
         </div>
 

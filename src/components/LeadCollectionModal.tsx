@@ -5,12 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaUser, FaPhoneAlt, FaGraduationCap, FaTimes, FaPaperPlane, FaCheckCircle, FaHeadset } from "react-icons/fa";
 
 const COURSES_OPTIONS = [
+  "Complete Tech Mastery Package",
   "Full Stack Web Development",
   "Data Science",
-  "Data Analytics",
-  "Artificial Intelligence",
-  "Generative AI (Gen AI)",
-  "Digital Marketing"
+  "Artificial Intelligence (AI/ML)"
 ];
 
 export function openLeadModal(course?: string) {
@@ -27,7 +25,7 @@ export default function LeadCollectionModal() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    course: "Full Stack Web Development"
+    course: "Complete Tech Mastery Package"
   });
   const [fieldErrors, setFieldErrors] = useState({ name: "", phone: "" });
 
@@ -87,7 +85,7 @@ export default function LeadCollectionModal() {
       setTimeout(() => {
         setSubmitted(false);
         setIsOpen(false);
-        setFormData({ name: "", phone: "", course: "Full Stack Web Development" });
+        setFormData({ name: "", phone: "", course: "Complete Tech Mastery Package" });
       }, 3500);
     } catch (err: unknown) {
       const message = err instanceof Error ? err.message : "Failed to submit. Please try again.";

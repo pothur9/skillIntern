@@ -12,10 +12,10 @@ const REVIEWS_COL1 = [
   },
   {
     name: "Priya Patel",
-    role: "Cyber Security Analyst",
+    role: "Data Scientist",
     company: "Infosys",
     rating: 5,
-    content: "The hands-on ethical hacking labs were practical and relevant. Mentor feedback helped me clear my technical interviews!"
+    content: "The Data Science track was incredibly practical. Building end-to-end ML pipelines and predictive models gave me real confidence during interviews."
   },
   {
     name: "Rohan Verma",
@@ -29,31 +29,31 @@ const REVIEWS_COL1 = [
 const REVIEWS_COL2 = [
   {
     name: "Ananya Reddi",
-    role: "UI/UX Designer",
+    role: "AI/ML Engineer",
     company: "Accenture",
     rating: 5,
-    content: "Building my portfolio during the course directly helped me land my current UI/UX position. Great mentors!"
+    content: "The AI/ML specialization was outstanding. Hands-on projects in neural networks and computer vision helped me land my dream role."
   },
   {
     name: "Vikram Malhotra",
-    role: "CAD Design Engineer",
+    role: "Full Stack Developer",
     company: "Tata Motors",
     rating: 5,
-    content: "AutoCAD & CATIA 3D modeling modules prepared me for real engineering challenges in the automotive sector."
+    content: "From React frontends to Node.js APIs and MongoDB — the Full Stack track gave me everything I needed to ship real products."
   },
   {
     name: "Neha Gupta",
-    role: "Digital Marketer",
+    role: "Machine Learning Engineer",
     company: "Deloitte",
     rating: 5,
-    content: "Performance ads and GA4 analytics training gave me real industry skills that got me hired quickly."
+    content: "The ML modules covered everything from regression to deep learning. Deploying models with FastAPI got me hired quickly."
   }
 ];
 
 const REVIEWS_COL3 = [
   {
     name: "Karan Singh",
-    role: "Cloud Specialist",
+    role: "DevOps Engineer",
     company: "Amazon AWS",
     rating: 5,
     content: "AWS cloud architecture and serverless projects were easy to follow. Highly recommend Pioneer Technologies."
@@ -67,10 +67,10 @@ const REVIEWS_COL3 = [
   },
   {
     name: "Divya Nair",
-    role: "HR Talent Analyst",
+    role: "Computer Vision Engineer",
     company: "Cognizant",
     rating: 5,
-    content: "HR metrics and recruitment dashboards gave me a data-driven edge in talent acquisition."
+    content: "The computer vision labs with PyTorch and OpenCV were industry-grade. I now build real-time vision systems at work."
   }
 ];
 

@@ -2,74 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { FaLaptopCode, FaPalette, FaDraftingCompass, FaChartLine, FaClock, FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import { FaLaptopCode, FaClock, FaArrowRight } from "react-icons/fa";
 
 const PATHS = [
   {
     id: 0,
-    courseId: "FULLSTACK-001",
-    title: "Full Stack Web Development",
-    subtitle: "Frontend, Backend, Databases, DevOps",
+    courseId: "COMBO-001",
+    title: "Complete Tech Mastery Package",
+    subtitle: "Web Dev • Data Science • AI/ML — All-in-One",
     icon: <FaLaptopCode />,
-    duration: "120 Hours (12 Weeks)",
-    skills: ["React 19", "Next.js", "Node.js", "MongoDB", "SQL"],
+    duration: "360 Hours (Combo)",
+    skills: ["React 19", "Next.js", "Node.js", "Python", "Pandas", "PyTorch", "TensorFlow"],
     accent: "#6366f1",
-    milestones: ["HTML/CSS/JS", "React & Next.js", "Node & APIs", "Full Stack SaaS", "Hiring Referral"]
-  },
-  {
-    id: 1,
-    courseId: "DATASCI-002",
-    title: "Data Science Track",
-    subtitle: "Python, Machine Learning, Deep Learning",
-    icon: <FaChartLine />,
-    duration: "120 Hours (12 Weeks)",
-    skills: ["Python", "Pandas", "Scikit-Learn", "TensorFlow", "FastAPI"],
-    accent: "#a855f7",
-    milestones: ["Python & Math", "Data Wrangling", "Machine Learning", "Deep Learning", "Placement"]
-  },
-  {
-    id: 2,
-    courseId: "DATAANALYTICS-003",
-    title: "Data Analytics Track",
-    subtitle: "SQL, Power BI, Tableau, Advanced Excel",
-    icon: <FaChartLine />,
-    duration: "120 Hours (12 Weeks)",
-    skills: ["SQL", "Power BI", "Tableau", "Excel", "Python"],
-    accent: "#ec4899",
-    milestones: ["Advanced Excel", "SQL Databases", "Power BI BI", "Tableau Analytics", "Placement"]
-  },
-  {
-    id: 3,
-    courseId: "AI-004",
-    title: "Artificial Intelligence Track",
-    subtitle: "Neural Networks, Computer Vision, PyTorch",
-    icon: <FaLaptopCode />,
-    duration: "120 Hours (12 Weeks)",
-    skills: ["PyTorch", "OpenCV", "Neural Networks", "Computer Vision", "Math"],
-    accent: "#8b5cf6",
-    milestones: ["Neural Math", "Computer Vision", "Deep Learning", "AI Models", "Placement"]
-  },
-  {
-    id: 4,
-    courseId: "GENAI-005",
-    title: "Generative AI (Gen AI) Track",
-    subtitle: "LLMs, RAG, Prompt Engineering & Agents",
-    icon: <FaLaptopCode />,
-    duration: "120 Hours (12 Weeks)",
-    skills: ["LangChain", "OpenAI APIs", "Vector DBs", "RAG", "LLMs"],
-    accent: "#f43f5e",
-    milestones: ["Prompting", "Vector Databases", "LangChain & RAG", "AI Autonomous Agents", "Placement"]
-  },
-  {
-    id: 5,
-    courseId: "DIGITALMKTG-006",
-    title: "Digital Marketing Track",
-    subtitle: "SEO, Meta Ads, Google Ads, GA4 Analytics",
-    icon: <FaChartLine />,
-    duration: "120 Hours (12 Weeks)",
-    skills: ["SEO", "Google Ads", "Meta Ads", "GA4", "Content"],
-    accent: "#10b981",
-    milestones: ["SEO Optimization", "PPC Ads", "Social Funnels", "GA4 Analytics", "Placement"]
+    milestones: ["Web Dev Foundations", "Data Science & ML", "AI/ML & Deep Learning", "Capstone Portfolio", "Placement"]
   }
 ];
 
@@ -299,7 +244,7 @@ export default function LearningPaths() {
             </div>
 
             <Link
-              href={`/courses/${currentPath.courseId || "FULLSTACK-001"}`}
+              href={`/courses/${currentPath.courseId || "COMBO-001"}`}
               className="lp-cta-link"
               style={{
                 display: "inline-flex",

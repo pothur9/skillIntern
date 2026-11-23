@@ -11,52 +11,22 @@ import {
   FaUserGraduate,
   FaArrowRight,
   FaSearch,
-  FaLaptopCode,
-  FaBookOpen,
-  FaChartLine,
-  FaMagic,
-  FaBrain,
-  FaBolt,
   FaLayerGroup,
   FaThLarge,
   FaList,
-  FaCode
+  FaBookOpen,
+  FaBolt
 } from "react-icons/fa";
 
 const CATEGORIES = [
   { name: "All", icon: FaLayerGroup },
-  { name: "Full Stack Web Development", icon: FaLaptopCode },
-  { name: "Data Science", icon: FaBookOpen },
-  { name: "Data Analytics", icon: FaChartLine },
-  { name: "Artificial Intelligence", icon: FaMagic },
-  { name: "Generative AI", icon: FaBrain },
-  { name: "Digital Marketing", icon: FaBolt }
+  { name: "Complete Tech Package", icon: FaLayerGroup }
 ];
 
 const CATEGORY_THEMES: Record<string, { badgeBg: string; borderHover: string }> = {
-  "Full Stack Web Development": {
-    badgeBg: "linear-gradient(135deg, #3b82f6, #6366f1)",
-    borderHover: "rgba(99, 102, 241, 0.6)"
-  },
-  "Data Science": {
-    badgeBg: "linear-gradient(135deg, #a855f7, #6366f1)",
+  "Complete Tech Package": {
+    badgeBg: "linear-gradient(135deg, #6366f1, #a855f7)",
     borderHover: "rgba(168, 85, 247, 0.6)"
-  },
-  "Data Analytics": {
-    badgeBg: "linear-gradient(135deg, #ec4899, #a855f7)",
-    borderHover: "rgba(236, 72, 153, 0.6)"
-  },
-  "Artificial Intelligence": {
-    badgeBg: "linear-gradient(135deg, #9333ea, #c084fc)",
-    borderHover: "rgba(192, 132, 252, 0.6)"
-  },
-  "Generative AI": {
-    badgeBg: "linear-gradient(135deg, #e11d48, #f43f5e)",
-    borderHover: "rgba(244, 63, 94, 0.6)"
-  },
-  "Digital Marketing": {
-    badgeBg: "linear-gradient(135deg, #0d9488, #10b981)",
-    borderHover: "rgba(16, 185, 129, 0.6)"
   }
 };
 
@@ -69,18 +39,10 @@ export default function Courses({ limit }: { limit?: number }) {
   useEffect(() => {
     const catParam = searchParams.get("category");
     if (catParam) {
-      if (catParam === "AI & ML" || catParam === "AI") {
-        setSelectedCat("Artificial Intelligence");
-      } else {
-        const matched = CATEGORIES.find(
-          (c) => c.name.toLowerCase() === catParam.toLowerCase()
-        );
-        if (matched) {
-          setSelectedCat(matched.name);
-        } else {
-          setSelectedCat(catParam);
-        }
-      }
+      const matched = CATEGORIES.find(
+        (c) => c.name.toLowerCase() === catParam.toLowerCase()
+      );
+      setSelectedCat(matched ? matched.name : "All");
     }
   }, [searchParams]);
 
@@ -157,7 +119,7 @@ export default function Courses({ limit }: { limit?: number }) {
               lineHeight: 1.2,
               marginBottom: "0.8rem"
             }}>
-              Explore Our <span className="gradient-text">Flagship Courses</span>
+              Explore Our <span className="gradient-text">Flagship Package</span>
             </h2>
 
             <p style={{ fontSize: "1rem", color: "rgba(255, 255, 255, 0.7)", lineHeight: 1.6 }}>
@@ -177,8 +139,8 @@ export default function Courses({ limit }: { limit?: number }) {
             backdropFilter: "blur(10px)"
           }}>
             <div style={{ textAlign: "center" }}>
-              <span style={{ display: "block", fontSize: "1.4rem", fontWeight: 900, color: "#ffffff" }}>6</span>
-              <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)" }}>Track Programs</span>
+              <span style={{ display: "block", fontSize: "1.4rem", fontWeight: 900, color: "#ffffff" }}>₹8K</span>
+              <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)" }}>Combo Fee</span>
             </div>
             <div style={{ width: "1px", height: "30px", background: "rgba(255,255,255,0.1)" }} />
             <div style={{ textAlign: "center" }}>
@@ -322,8 +284,10 @@ export default function Courses({ limit }: { limit?: number }) {
             transition={{ duration: 0.3 }}
             style={{
               display: "grid",
-              gridTemplateColumns: viewMode === "grid" ? "repeat(auto-fill, minmax(320px, 1fr))" : "1fr",
-              gap: "2rem"
+              gridTemplateColumns: viewMode === "grid" ? (displayedCourses.length === 1 ? "1fr" : "repeat(auto-fill, minmax(320px, 1fr))") : "1fr",
+              gap: "2rem",
+              maxWidth: viewMode === "grid" && displayedCourses.length === 1 ? "720px" : "none",
+              margin: "0 auto"
             }}
           >
             {displayedCourses.length === 0 ? (
@@ -366,7 +330,7 @@ export default function Courses({ limit }: { limit?: number }) {
                   course.image ||
                   "/fullstack_course.png";
                 const theme =
-                  CATEGORY_THEMES[course.category] || CATEGORY_THEMES["Full Stack Web Development"];
+                  CATEGORY_THEMES[course.category] || CATEGORY_THEMES["Complete Tech Package"];
 
                 const rawPrice = parseInt(course.price.replace(/[^\d]/g, "")) || 60000;
                 const rawOrig = parseInt(course.originalPrice?.replace(/[^\d]/g, "") || "") || 90000;
@@ -550,7 +514,7 @@ export default function Courses({ limit }: { limit?: number }) {
                     <Link
                       href={`/courses/${course.id}`}
                       style={{
-                        height: "190px",
+                        height: displayedCourses.length === 1 ? "240px" : "190px",
                         width: "100%",
                         position: "relative",
                         overflow: "hidden",

@@ -6,8 +6,8 @@ import { FaRocket, FaCheckCircle, FaArrowRight, FaCode, FaLaptopCode } from "rea
 
 const PROJECTS = [
   {
-    courseId: "FULLSTACK-001",
-    courseTitle: "Full Stack Web Development",
+    courseId: "COMBO-001",
+    courseTitle: "Complete Tech Mastery Package",
     projectTitle: "Enterprise E-Commerce SaaS & Analytics Platform",
     desc: "A production-grade full stack SaaS application featuring Next.js 19 Server Actions, Stripe subscription billing, MongoDB aggregations, and live admin analytics.",
     tools: ["React 19", "Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
@@ -16,8 +16,8 @@ const PROJECTS = [
     metrics: "Built by 180+ Students in Week 10"
   },
   {
-    courseId: "DATASCI-002",
-    courseTitle: "Data Science",
+    courseId: "COMBO-001",
+    courseTitle: "Complete Tech Mastery Package",
     projectTitle: "Predictive Churn Engine & Automated ML Pipeline",
     desc: "An end-to-end Machine Learning pipeline analyzing enterprise customer behavioral signals to predict churn probability with 94.2% model accuracy.",
     tools: ["Python", "Pandas", "Scikit-Learn", "XGBoost", "FastAPI"],
@@ -26,44 +26,14 @@ const PROJECTS = [
     metrics: "94.2% Verified Model Accuracy"
   },
   {
-    courseId: "DATAANALYTICS-003",
-    courseTitle: "Data Analytics",
-    projectTitle: "Executive Supply Chain & Financial BI Dashboard",
-    desc: "An interactive executive dashboard aggregating multi-million row SQL databases in Power BI to monitor sales revenue, profit margins, and supply chain logistics.",
-    tools: ["Power BI", "SQL", "Tableau", "Advanced Excel"],
-    categoryBadge: "Data Analytics",
-    gradient: "from-pink-600 to-purple-600",
-    metrics: "Processed 5M+ SQL Query Records"
-  },
-  {
-    courseId: "AI-004",
-    courseTitle: "Artificial Intelligence",
+    courseId: "COMBO-001",
+    courseTitle: "Complete Tech Mastery Package",
     projectTitle: "Real-Time Object Detection & Neural Vision System",
     desc: "A deep learning computer vision model built with PyTorch and OpenCV capable of real-time multi-object classification and video image segmentation.",
     tools: ["PyTorch", "OpenCV", "CNNs", "CUDA", "FastAPI"],
-    categoryBadge: "Artificial Intelligence",
+    categoryBadge: "Artificial Intelligence (AI/ML)",
     gradient: "from-purple-600 to-pink-600",
     metrics: "Sub-100ms Inference Latency"
-  },
-  {
-    courseId: "GENAI-005",
-    courseTitle: "Generative AI (Gen AI)",
-    projectTitle: "Autonomous Multi-Agent Copilot with RAG & Vector DB",
-    desc: "An enterprise Gen AI agent powered by LangChain, OpenAI APIs, and Vector DBs (Pinecone) for real-time document search and automated workflow execution.",
-    tools: ["LangChain", "OpenAI APIs", "Pinecone", "RAG", "Python"],
-    categoryBadge: "Generative AI (Gen AI)",
-    gradient: "from-rose-600 to-pink-600",
-    metrics: "10k+ Queries Vector Indexing"
-  },
-  {
-    courseId: "DIGITALMKTG-006",
-    courseTitle: "Digital Marketing",
-    projectTitle: "360° Omnichannel Performance Ads & Growth Funnel",
-    desc: "A high-ROI digital marketing campaign driving 4.5x ROAS across Meta & Google Ads, paired with GA4 conversion funnels, SEO landing pages, and lead tracking.",
-    tools: ["Google Ads", "Meta Ads", "GA4", "SEO Semrush"],
-    categoryBadge: "Digital Marketing",
-    gradient: "from-teal-500 to-emerald-600",
-    metrics: "4.5x Verified Return On Ad Spend"
   }
 ];
 
@@ -89,11 +59,11 @@ export default function ProjectsShowcaseSection() {
             Real-World Projects <span className="gradient-text">You Will Build</span>
           </h2>
           <p className="section-subtitle" style={{ margin: "0 auto", maxWidth: "680px", color: "#475569" }}>
-            Every one of our 6 career programs includes mandatory production-grade capstone projects so you graduate with a job-ready portfolio.
+            Our Complete Tech Mastery Package includes production-grade capstone projects across Web Dev, Data Science & AI/ML so you graduate with a job-ready portfolio.
           </p>
         </div>
 
-        {/* 6 Grid Projects Cards */}
+        {/* Package Capstone Projects Cards */}
         <div style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
