@@ -63,10 +63,10 @@ export default function CourseComparisonSection() {
             color: "#0f172a",
             marginBottom: "0.8rem"
           }}>
-            Explore Our <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>Complete Tech Package</span>
+            Explore Our <span style={{ color: "#2563eb", background: "rgba(219, 234, 254, 0.8)", padding: "0 0.5rem", borderRadius: "0.5rem" }}>7 Career Programs</span>
           </h2>
           <p style={{ fontSize: "1rem", color: "#475569", maxWidth: "600px", margin: "0 auto" }}>
-            Explore the skills, salary outcomes, industry tools, and curriculum of our all-in-one Complete Tech Mastery Package.
+            Compare the bundle and individual programs — skills, salary outcomes, tools, and career prospects — to pick your perfect path.
           </p>
         </div>
 

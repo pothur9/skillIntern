@@ -61,12 +61,12 @@ export default function CTA() {
               <FaRocket />
             </div>
 
-            <h2 className="section-title" style={{ maxWidth: "700px", margin: "0 auto 1rem" }}>
+            <h2 className="section-title" style={{ maxWidth: "700px", margin: "0 auto 1rem", color: "#ffffff" }}>
               Your Career Breakthrough <br />
-              <span className="gradient-text">Starts Right Here</span>
+              <span style={{ background: "linear-gradient(135deg,#60a5fa,#a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Starts Right Here</span>
             </h2>
 
-            <p className="section-subtitle" style={{ margin: "0 auto 2.5rem", maxWidth: "600px" }}>
+            <p className="section-subtitle" style={{ margin: "0 auto 2.5rem", maxWidth: "600px", color: "rgba(255,255,255,0.75)" }}>
               Join thousands of learners who chose a guided path to career success. No matter your domain — we&apos;ve got you covered.
             </p>
 

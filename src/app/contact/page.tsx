@@ -177,7 +177,10 @@ export default function ContactPage() {
                       <option>Complete Tech Mastery Package</option>
                       <option>Full Stack Web Development</option>
                       <option>Data Science</option>
-                      <option>Artificial Intelligence (AI/ML)</option>
+                      <option>Data Analytics</option>
+                      <option>Artificial Intelligence</option>
+                      <option>Generative AI (Gen AI)</option>
+                      <option>Digital Marketing</option>
                     </select>
                   </div>
 

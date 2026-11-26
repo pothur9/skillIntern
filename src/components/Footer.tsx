@@ -70,13 +70,16 @@ export default function Footer() {
             {/* Col 3: Domains */}
             <div>
               <h4 style={{ fontFamily: "var(--font-orbitron)", fontSize: "1rem", color: "#0f0a1e", marginBottom: "1.2rem" }}>
-                Our Package
+              Our Package
               </h4>
               <ul style={{ display: "flex", flexDirection: "column", gap: "0.7rem", fontSize: "0.88rem", color: "var(--text-muted)" }}>
                 <li><Link href="/courses/COMBO-001">Complete Tech Mastery Package</Link></li>
-                <li><Link href="/courses/COMBO-001">Full Stack Web Development</Link></li>
-                <li><Link href="/courses/COMBO-001">Data Science</Link></li>
-                <li><Link href="/courses/COMBO-001">Artificial Intelligence (AI/ML)</Link></li>
+                <li><Link href="/courses/FULLSTACK-001">Full Stack Web Development</Link></li>
+                <li><Link href="/courses/DATASCI-002">Data Science</Link></li>
+                <li><Link href="/courses/DATAANALYTICS-003">Data Analytics</Link></li>
+                <li><Link href="/courses/AI-004">Artificial Intelligence</Link></li>
+                <li><Link href="/courses/GENAI-005">Generative AI (Gen AI)</Link></li>
+                <li><Link href="/courses/DIGITALMKTG-006">Digital Marketing</Link></li>
               </ul>
             </div>
 

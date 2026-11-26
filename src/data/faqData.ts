@@ -10,7 +10,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: "What kind of courses does Pioneer Technologies offer?",
-    answer: "We offer one all-in-one Complete Tech Mastery Package that bundles three flagship tracks — Full Stack Web Development, Data Science, and Artificial Intelligence (AI/ML) — at a single combo price of ₹8,000. The program is designed to meet industry standards and boost employability."
+    answer: "We offer 7 career programs, all priced at ₹8,000: the all-in-one Complete Tech Mastery Package (bundling Full Stack Web Development, Data Science & AI/ML), plus six individual courses — Full Stack Web Development, Data Science, Data Analytics, Artificial Intelligence, Generative AI (Gen AI), and Digital Marketing."
   },
   {
     question: "Are the courses live or recorded?",

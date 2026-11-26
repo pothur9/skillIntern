@@ -8,7 +8,10 @@ const COURSES_OPTIONS = [
   "Complete Tech Mastery Package",
   "Full Stack Web Development",
   "Data Science",
-  "Artificial Intelligence (AI/ML)"
+  "Data Analytics",
+  "Artificial Intelligence",
+  "Generative AI (Gen AI)",
+  "Digital Marketing"
 ];
 
 export function openLeadModal(course?: string) {

@@ -63,13 +63,13 @@ export default function WhyChooseUs() {
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "4rem" }}>
-          <div className="section-badge" style={{ margin: "0 auto 1rem" }}>
+          <div className="section-badge" style={{ margin: "0 auto 1rem", background: "rgba(192,132,252,0.15)", border: "1px solid rgba(192,132,252,0.3)", color: "#c084fc" }}>
             <span>Familiar? vs The Solution</span>
           </div>
-          <h2 className="section-title">
-            The Learning Experience <span className="gradient-text">Redefined</span>
+          <h2 className="section-title" style={{ color: "#ffffff" }}>
+            The Learning Experience <span style={{ background: "linear-gradient(135deg,#60a5fa,#a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>Redefined</span>
           </h2>
-          <p className="section-subtitle" style={{ margin: "0 auto" }}>
+          <p className="section-subtitle" style={{ margin: "0 auto", color: "rgba(255,255,255,0.65)" }}>
             These are the real challenges learners face every day — and we built our platform to solve them.
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function WhyChooseUs() {
                     <h3 style={{ fontSize: "1rem", fontWeight: 700, color: "#fca5a5", marginBottom: "0.4rem" }}>
                       {p.title}
                     </h3>
-                    <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: 1.6 }}>
+                    <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.62)", lineHeight: 1.6 }}>
                       {p.desc}
                     </p>
                   </div>
@@ -159,7 +159,7 @@ export default function WhyChooseUs() {
                   <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#fff", marginBottom: "0.4rem" }}>
                     {s.title}
                   </h3>
-                  <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: 1.6, marginBottom: "0.8rem" }}>
+                  <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.65)", lineHeight: 1.6, marginBottom: "0.8rem" }}>
                     {s.desc}
                   </p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>

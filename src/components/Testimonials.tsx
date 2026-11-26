@@ -29,48 +29,48 @@ const REVIEWS_COL1 = [
 const REVIEWS_COL2 = [
   {
     name: "Ananya Reddi",
-    role: "AI/ML Engineer",
+    role: "Data Analyst",
     company: "Accenture",
     rating: 5,
-    content: "The AI/ML specialization was outstanding. Hands-on projects in neural networks and computer vision helped me land my dream role."
+    content: "The Power BI and SQL dashboards I built during the course directly helped me land my current analyst position. Great mentors!"
   },
   {
     name: "Vikram Malhotra",
-    role: "Full Stack Developer",
+    role: "Gen AI Engineer",
     company: "Tata Motors",
     rating: 5,
-    content: "From React frontends to Node.js APIs and MongoDB — the Full Stack track gave me everything I needed to ship real products."
+    content: "Building LLM-powered agents with LangChain and RAG pipelines was the highlight. Real enterprise-grade Gen AI work."
   },
   {
     name: "Neha Gupta",
-    role: "Machine Learning Engineer",
+    role: "Digital Marketer",
     company: "Deloitte",
     rating: 5,
-    content: "The ML modules covered everything from regression to deep learning. Deploying models with FastAPI got me hired quickly."
+    content: "Performance ads and GA4 analytics training gave me real industry skills that got me hired quickly."
   }
 ];
 
 const REVIEWS_COL3 = [
   {
     name: "Karan Singh",
-    role: "DevOps Engineer",
+    role: "MERN Stack Developer",
     company: "Amazon AWS",
     rating: 5,
-    content: "AWS cloud architecture and serverless projects were easy to follow. Highly recommend Pioneer Technologies."
+    content: "React and Node projects were easy to follow with great mentor reviews. Highly recommend Pioneer Technologies."
   },
   {
     name: "Siddharth Rao",
-    role: "Python Developer",
+    role: "ML Engineer",
     company: "IBM",
     rating: 5,
-    content: "From core automation scripts to FastAPI endpoints — the Python track was comprehensive."
+    content: "From scikit-learn to TensorFlow — the ML curriculum was comprehensive and hands-on."
   },
   {
     name: "Divya Nair",
-    role: "Computer Vision Engineer",
+    role: "Business Intelligence Lead",
     company: "Cognizant",
     rating: 5,
-    content: "The computer vision labs with PyTorch and OpenCV were industry-grade. I now build real-time vision systems at work."
+    content: "Tableau storytelling and executive dashboards gave me a data-driven edge in talent acquisition and reporting."
   }
 ];
 

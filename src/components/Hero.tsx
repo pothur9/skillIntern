@@ -8,7 +8,10 @@ import { FaArrowRight, FaPlay, FaCode, FaPalette, FaDraftingCompass, FaChartLine
 const ROTATING_DOMAINS = [
   { text: "Full Stack Web Dev", color: "linear-gradient(135deg, #6366f1, #818cf8, #a78bfa)" },
   { text: "Data Science", color: "linear-gradient(135deg, #a855f7, #c084fc, #e879f9)" },
-  { text: "Artificial Intelligence", color: "linear-gradient(135deg, #8b5cf6, #a78bfa, #c084fc)" }
+  { text: "Data Analytics", color: "linear-gradient(135deg, #ec4899, #f472b6, #fb7185)" },
+  { text: "Artificial Intelligence", color: "linear-gradient(135deg, #8b5cf6, #a78bfa, #c084fc)" },
+  { text: "Generative AI", color: "linear-gradient(135deg, #e11d48, #f43f5e, #fb7185)" },
+  { text: "Digital Marketing", color: "linear-gradient(135deg, #10b981, #34d399, #6ee7b7)" }
 ];
 
 const ORBIT_ICONS = [
@@ -204,7 +207,7 @@ export default function Hero() {
                   marginBottom: "2.5rem"
                 }}
               >
-                From Full Stack Web Development to Data Science & AI/ML — master structured learning paths that prepare you for the real world.
+                From Full Stack Web Dev to Data Science, AI, Gen AI, and Digital Marketing — structured learning paths built for real-world job readiness.
               </motion.p>
 
               {/* CTA Buttons */}

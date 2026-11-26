@@ -15,18 +15,52 @@ import {
   FaThLarge,
   FaList,
   FaBookOpen,
-  FaBolt
+  FaBolt,
+  FaLaptopCode,
+  FaChartLine,
+  FaMagic,
+  FaBrain
 } from "react-icons/fa";
 
 const CATEGORIES = [
   { name: "All", icon: FaLayerGroup },
-  { name: "Complete Tech Package", icon: FaLayerGroup }
+  { name: "Complete Tech Package", icon: FaBolt },
+  { name: "Full Stack Web Development", icon: FaLaptopCode },
+  { name: "Data Science", icon: FaBookOpen },
+  { name: "Data Analytics", icon: FaChartLine },
+  { name: "Artificial Intelligence", icon: FaMagic },
+  { name: "Generative AI", icon: FaBrain },
+  { name: "Digital Marketing", icon: FaBolt }
 ];
 
 const CATEGORY_THEMES: Record<string, { badgeBg: string; borderHover: string }> = {
   "Complete Tech Package": {
     badgeBg: "linear-gradient(135deg, #6366f1, #a855f7)",
     borderHover: "rgba(168, 85, 247, 0.6)"
+  },
+  "Full Stack Web Development": {
+    badgeBg: "linear-gradient(135deg, #3b82f6, #6366f1)",
+    borderHover: "rgba(99, 102, 241, 0.6)"
+  },
+  "Data Science": {
+    badgeBg: "linear-gradient(135deg, #a855f7, #6366f1)",
+    borderHover: "rgba(168, 85, 247, 0.6)"
+  },
+  "Data Analytics": {
+    badgeBg: "linear-gradient(135deg, #ec4899, #a855f7)",
+    borderHover: "rgba(236, 72, 153, 0.6)"
+  },
+  "Artificial Intelligence": {
+    badgeBg: "linear-gradient(135deg, #9333ea, #c084fc)",
+    borderHover: "rgba(192, 132, 252, 0.6)"
+  },
+  "Generative AI": {
+    badgeBg: "linear-gradient(135deg, #e11d48, #f43f5e)",
+    borderHover: "rgba(244, 63, 94, 0.6)"
+  },
+  "Digital Marketing": {
+    badgeBg: "linear-gradient(135deg, #0d9488, #10b981)",
+    borderHover: "rgba(16, 185, 129, 0.6)"
   }
 };
 
@@ -39,10 +73,15 @@ export default function Courses({ limit }: { limit?: number }) {
   useEffect(() => {
     const catParam = searchParams.get("category");
     if (catParam) {
-      const matched = CATEGORIES.find(
-        (c) => c.name.toLowerCase() === catParam.toLowerCase()
-      );
-      setSelectedCat(matched ? matched.name : "All");
+      if (catParam === "AI & ML" || catParam === "AI") {
+        setSelectedCat("Artificial Intelligence");
+      } else {
+        const matched = CATEGORIES.find(
+          (c) => c.name.toLowerCase() === catParam.toLowerCase()
+        );
+        if (matched) setSelectedCat(matched.name);
+        else setSelectedCat(catParam);
+      }
     }
   }, [searchParams]);
 
@@ -119,7 +158,7 @@ export default function Courses({ limit }: { limit?: number }) {
               lineHeight: 1.2,
               marginBottom: "0.8rem"
             }}>
-              Explore Our <span className="gradient-text">Flagship Package</span>
+              Explore Our <span className="gradient-text">Career Programs</span>
             </h2>
 
             <p style={{ fontSize: "1rem", color: "rgba(255, 255, 255, 0.7)", lineHeight: 1.6 }}>
@@ -139,8 +178,8 @@ export default function Courses({ limit }: { limit?: number }) {
             backdropFilter: "blur(10px)"
           }}>
             <div style={{ textAlign: "center" }}>
-              <span style={{ display: "block", fontSize: "1.4rem", fontWeight: 900, color: "#ffffff" }}>₹8K</span>
-              <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)" }}>Combo Fee</span>
+              <span style={{ display: "block", fontSize: "1.4rem", fontWeight: 900, color: "#ffffff" }}>7</span>
+              <span style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.6)" }}>Programs</span>
             </div>
             <div style={{ width: "1px", height: "30px", background: "rgba(255,255,255,0.1)" }} />
             <div style={{ textAlign: "center" }}>
@@ -330,7 +369,7 @@ export default function Courses({ limit }: { limit?: number }) {
                   course.image ||
                   "/fullstack_course.png";
                 const theme =
-                  CATEGORY_THEMES[course.category] || CATEGORY_THEMES["Complete Tech Package"];
+                  CATEGORY_THEMES[course.category] || CATEGORY_THEMES["Full Stack Web Development"];
 
                 const rawPrice = parseInt(course.price.replace(/[^\d]/g, "")) || 60000;
                 const rawOrig = parseInt(course.originalPrice?.replace(/[^\d]/g, "") || "") || 90000;
